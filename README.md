@@ -23,7 +23,7 @@
 
 先行版本号及版本编译元数据可以加到`[主版本号].[次版本号].[修订号]`的后面，作为延伸，如`1.0.0-rc.1`。
 
-在项目中，可以考虑使用 [release](https://www.npmjs.com/package/release)。
+在项目中，可以考虑使用 [release](https://www.npmjs.com/package/release) 或 [np](https://www.npmjs.com/package/np)。
 
 更多信息参见[语义化版本](https://semver.org/lang/zh-CN/)。
 
