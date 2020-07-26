@@ -369,6 +369,8 @@ TODO：补充该部分。
 
 ## 致谢
 
+- [阿里巴巴 DevOps 实践手册](https://developer.aliyun.com/topic/download?id=205)
+- [ledge](https://devops.phodal.com/)
 - [荒山 - 如果我是前端团队 Leader，怎么制定前端协作规范?](https://juejin.im/post/5d3a7134f265da1b5d57f1ed)
 - [语义化版本](https://semver.org/lang/zh-CN/)
 - [Git 工作流与分支管理规范](https://www.yuque.com/fe9/basic/nruxq8#837fe4a5)
