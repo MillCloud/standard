@@ -21,7 +21,7 @@
 - 次版本号：存在功能新增时
 - 修订号：存在问题修复时
 
-先行版本号及版本编译元数据可以加到`[主版本号].[次版本号].[修订号]`的后面，作为延伸，如`1.0.0-rc.1`。
+先行版本号及版本编译元数据可以加到`[主版本号].[次版本号].[修订号]`的后面，作为延伸，如`1.0.0-beta.1`，`1.0.0-rc.1`。
 
 在项目中，可以考虑使用 [release](https://www.npmjs.com/package/release) 或 [np](https://www.npmjs.com/package/np)。
 
@@ -132,6 +132,7 @@ last 5 versions
 not dead
 chrome >= 70
 firefox >= 70
+ie >= 11
 ```
 
 ## 项目组织规范
@@ -163,6 +164,7 @@ TODO：补充该部分。
 
 对于 app，使用以下框架初始化，配置并开发：
 
+- expo
 - uni-app
 
 ## 编码规范
@@ -183,9 +185,6 @@ indent_size = 2
 indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
-
-[*.md]
-trim_trailing_whitespace = false
 
 ```
 
