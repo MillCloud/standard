@@ -18,7 +18,7 @@
 
 ### CSS/LESS/SASS/SCSS/STYLUS
 
-总体上遵循 [mdo - code-guide](https://codeguide.co/)，同时要理解 [BEM](http://getbem.com/)，[SMACSS](http://smacss.com/) 和 [OOCSS](https://www.keycdn.com/blog/oocss#what-is-oocss)。
+总体上遵循 [mdo - code-guide](https://codeguide.co/)，同时要理解 [BEM](http://getbem.com/)，[SMACSS](http://smacss.com/)，[OOCSS](https://www.keycdn.com/blog/oocss#what-is-oocss) 和 [CSS Modules](https://github.com/css-modules/css-modules#readme)。
 
 ### JavaScript
 
