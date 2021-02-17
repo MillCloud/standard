@@ -10,7 +10,13 @@
 
 遵循 [bootstrap - editorconfig](https://github.com/twbs/bootstrap/blob/main/.editorconfig)。
 
-尽可能使用驼峰法命名，某些情况下，如书写 CSS 类名时，可以使用其它命名方法。
+尽可能使用驼峰命名法。
+
+书写 CSS 类名时，应优先使用短横线命名法，其次 BEM 命名法。对于 CSS Modules，应优先使用驼峰命名法。
+
+书写方法名时也应使用驼峰命名法，优先以 `handle` 开头，其次以 `on` 开头。
+
+具体情况应根据框架要求决定。
 
 ### HTML
 
