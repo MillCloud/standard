@@ -54,11 +54,17 @@
 
 ### 任务管理
 
-使用 [Microsoft Azure DevOps Server](https://azure.microsoft.com/zh-cn/solutions/devops/)，[AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/)，[Jira](https://www.atlassian.com/zh/software/jira)，[Trello](https://trello.com/home) 或[滴答清单](https://dida365.com/home)进行任务管理。
+- [Microsoft Azure DevOps Server](https://azure.microsoft.com/zh-cn/solutions/devops/)
+- [AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/)
+- [Jira](https://www.atlassian.com/zh/software/jira)
+- [Trello](https://trello.com/home)
+- [滴答清单](https://dida365.com/home)
+- [Todoist](https://todoist.com/zh-CN)
+- [Microsoft To Do](https://todo.microsoft.com/)
 
 关于 DevOps 的实践还可以参考 [Ledge](https://devops.phodal.com/) 和[阿里巴巴 DevOps 实践手册](https://developer.aliyun.com/topic/download?id=205)。
 
-总体而言，滴答清单比较适合个人安排生活和工作，而其它应用更适合团队工作，建议先了解[时间管理方法论](https://help.dida365.com/tasks)并结合实际工具应用。
+总体而言，前四个更适合团队工作，后三个更适合个人安排，建议先了解[时间管理方法论](https://help.dida365.com/tasks)并结合实际工具应用。
 
 ### 版本控制
 
