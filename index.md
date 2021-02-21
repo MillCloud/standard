@@ -10,6 +10,8 @@
 
 总体上遵循 [bootstrap - editorconfig](https://github.com/twbs/bootstrap/blob/main/.editorconfig) 和 [kettanaito - naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet)。
 
+书写 JavaScript/TypeScript 时，应优先使用驼峰命名法。
+
 书写 CSS 类名时，应优先使用短横线命名法，其次 BEM 命名法。对于 CSS Modules，应优先使用驼峰命名法。
 
 具体情况应根据框架要求决定。
