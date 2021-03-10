@@ -54,7 +54,6 @@
 
 - [Microsoft Azure DevOps Server](https://azure.microsoft.com/zh-cn/solutions/devops/)
 - [AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/)
-- [Jira](https://www.atlassian.com/zh/software/jira)
 - [Trello](https://trello.com/home)
 - [滴答清单](https://dida365.com/home)
 - [Todoist](https://todoist.com/zh-CN)
@@ -63,6 +62,8 @@
 关于 DevOps 的实践还可以参考 [Ledge](https://devops.phodal.com/) 和[阿里巴巴 DevOps 实践手册](https://developer.aliyun.com/topic/download?id=205)。
 
 总体而言，前四个更适合团队工作，后三个更适合个人安排，建议先了解[时间管理方法论](https://help.dida365.com/tasks)并结合实际工具应用。
+
+另外也推荐个人建立必要的笔记/知识库，推荐 [语雀](https://www.yuque.com)，[wolai](https://www.wolai.com/signup?invitation=2S3Y77P) 和 [vuepress](https://vuepress.github.io/)。
 
 ### 版本控制
 
@@ -256,6 +257,8 @@ DevOps 工具一般包含持续集成功能。也可以考虑单独使用。
 要快速生成一个 README，可以使用 [othneildrew - best-readme-template](https://github.com/othneildrew/Best-README-Template#readme)。
 
 如果还需要更多示例，可以参考 [matiassingers - awesome-readme](https://github.com/matiassingers/awesome-readme#readme)。
+
+另见 [中文技术文档写作规范](document-style-guide) 和 [Vue 文档编写指南](https://v3.cn.vuejs.org/guide/contributing/writing-guide.html) 以了解具体的格式和准则。
 
 ## 前后端协作规范
 
