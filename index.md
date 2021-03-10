@@ -67,17 +67,15 @@
 
 ### 版本控制
 
-3 人以上团队，使用 [git-flow](https://datasift.github.io/gitflow/GitFlowHotfixBranch.png) 工作流。
+3 人以上团队，使用 [git-flow](https://datasift.github.io/gitflow/) 工作流。
 
 <img
-  src="https://cdn.nlark.com/yuque/0/2019/png/199677/1547711700486-cff85698-8f15-4397-b845-22ae6efa4935.png"
+  src="https://datasift.github.io/gitflow/GitFlowHotfixBranch.png"
   title="git-flow 示意图"
   alt="git-flow 示意图"
   width="540px"
   referrer="no-referrer"
 />
-
-[图源](https://www.yuque.com/fe9/basic/nruxq8)
 
 - feature - 功能分支，一般是从 develop 开发分支上检出 checkout
 - develop - 开发分支，feature 功能分支的代码开发完成后，经过 code review 后合并到此分支
