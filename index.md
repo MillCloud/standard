@@ -74,6 +74,7 @@
   title="git-flow 示意图"
   alt="git-flow 示意图"
   width="540px"
+  referrer="no-referrer"
 />
 
 [图源](https://www.yuque.com/fe9/basic/nruxq8)
@@ -182,6 +183,7 @@ type 只允许取以下值。
   title="持续集成工作流"
   alt="持续集成工作流"
   width="640px"
+  referrer="no-referrer"
 />
 
 [图源](https://juejin.cn/post/6844903897610321934#heading-7)
@@ -219,6 +221,7 @@ DevOps 工具一般包含持续集成功能。也可以考虑单独使用。
   title="测试工作流"
   alt="测试工作流"
   width="640px"
+  referrer="no-referrer"
 />
 
 [图源](https://juejin.cn/post/6844903897610321934#heading-36)
