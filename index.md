@@ -55,15 +55,18 @@
 - [Microsoft Azure DevOps Server](https://azure.microsoft.com/zh-cn/solutions/devops/)
 - [AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/)
 - [Trello](https://trello.com/home)
+- [OmniPlan](https://www.omnigroup.com/omniplan)
 - [滴答清单](https://dida365.com/home)
 - [Todoist](https://todoist.com/zh-CN)
 - [Microsoft To Do](https://todo.microsoft.com/)
+- [OmniFocus](https://www.omnigroup.com/omnifocus)
+- [MyLifeOrganized](https://www.mylifeorganized.net/)
 
-关于 DevOps 的实践还可以参考 [Ledge](https://devops.phodal.com/) 和[阿里巴巴 DevOps 实践手册](https://developer.aliyun.com/topic/download?id=205)。
+关于 DevOps 的实践还可以参考 [Ledge](https://devops.phodal.com/) 和 [阿里巴巴 DevOps 实践手册](https://developer.aliyun.com/topic/download?id=205)。
 
-总体而言，前四个更适合团队工作，后三个更适合个人安排，建议先了解[时间管理方法论](https://help.dida365.com/tasks)并结合实际工具应用。
+建议先了解 [时间管理方法论](https://help.dida365.com/tasks) 并结合实际工具应用。
 
-另外也推荐个人建立必要的笔记/知识库，推荐 [语雀](https://www.yuque.com)，[wolai](https://www.wolai.com/signup?invitation=2S3Y77P) 和 [vuepress](https://vuepress.github.io/)。
+另外也推荐建立必要的笔记/知识库，推荐 [语雀](https://www.yuque.com) 和 [wolai](https://www.wolai.com/signup?invitation=2S3Y77P)。
 
 ### 版本控制
 
@@ -188,6 +191,7 @@ type 只允许取以下值。
 
 DevOps 工具一般包含持续集成功能。也可以考虑单独使用。
 
+- [github-actions](https://github.com/features/actions)
 - [flow-ci](https://flowci.github.io/)
 - [travis-ci](https://travis-ci.org/)
 - [circle-ci](https://circleci.com/)
