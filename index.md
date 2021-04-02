@@ -52,8 +52,9 @@
 
 ### 任务管理
 
-- [Microsoft Azure DevOps Server](https://azure.microsoft.com/zh-cn/solutions/devops/)
+- [Microsoft Azure DevOps](https://azure.microsoft.com/zh-cn/overview/what-is-devops/)
 - [AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/)
+- [阿里云 DevOps](https://develop.aliyun.com/devops)
 - [Trello](https://trello.com/home)
 - [OmniPlan](https://www.omnigroup.com/omniplan)
 - [滴答清单](https://dida365.com/home)
