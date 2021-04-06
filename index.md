@@ -1,3 +1,11 @@
+---
+html:
+  offline: false
+  toc: true
+export_on_save:
+  html: true
+---
+
 # 前端规范
 
 ## 目标
