@@ -60,11 +60,17 @@ export_on_save:
 
 ### 任务管理
 
+以下是一些团队任务管理工具。
+
 - [Microsoft Azure DevOps](https://azure.microsoft.com/zh-cn/overview/what-is-devops/)
 - [AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/)
 - [阿里云 DevOps](https://develop.aliyun.com/devops)
 - [Trello](https://trello.com/home)
 - [OmniPlan](https://www.omnigroup.com/omniplan)
+- [Worktile](https://worktile.com/)
+
+以下是一些个人任务管理工具。
+
 - [滴答清单](https://dida365.com/home)
 - [Todoist](https://todoist.com/zh-CN)
 - [Microsoft To Do](https://todo.microsoft.com/)
