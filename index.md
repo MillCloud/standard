@@ -36,7 +36,7 @@ export_on_save:
 
 ### 通用
 
-总体上遵循 [bootstrap - editorconfig](https://github.com/twbs/bootstrap/blob/main/.editorconfig) 和 [kettanaito - naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet)。
+总体上遵循 [bootstrap editorconfig](https://github.com/twbs/bootstrap/blob/main/.editorconfig) 和 [kettanaito - naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet)。
 
 书写 JavaScript/TypeScript 时，应优先使用驼峰命名法。
 
@@ -74,7 +74,9 @@ export_on_save:
 
 ### 工具
 
-开发中需要考虑代码格式的问题，必须使用 [Prettier](https://prettier.io/) 搭配其它 Linter。请使用 [VSCode](https://code.visualstudio.com/docs) + [@modyqyw/fabric](https://github.com/ModyQyW/fabric)。
+开发中需要考虑代码格式的问题，考虑使用 [Prettier](https://prettier.io/) 搭配其它 Linter。
+
+整体而言，可以考虑 [VSCode](https://code.visualstudio.com/docs) + [@modyqyw/fabric](https://github.com/ModyQyW/fabric)。
 
 ## 工作流规范
 
@@ -115,21 +117,21 @@ export_on_save:
   referrer="no-referrer"
 />
 
-- feature - 功能分支，一般是从 develop 开发分支上检出 checkout
-- develop - 开发分支，feature 功能分支的代码开发完成后，经过 code review 后合并到此分支
-- release - 测试、发布分支，此分支从 develop 分支上检出 checkout, 一般提测阶段会使用该分支的代码
-- bugfix - 修复分支，修复 release 分支问题
-- hotfix - 紧急修复分支，一般是用于修复上线后的生产环境的问题
-- main/master - 可发布的稳定版分支
+- `feature` - 功能分支，一般是从 `develop` 开发分支上检出 `checkout`
+- `develop` - 开发分支，`feature` 功能分支的代码开发完成后，经过代码检查后合并到此分支
+- `release` - 测试、发布分支，此分支从 `develop` 分支上检出 `checkout`, 一般提测阶段会使用该分支的代码
+- `bugfix` - 修复分支，修复 `release` 分支问题
+- `hotfix` - 紧急修复分支，一般是用于修复上线后的生产环境的问题
+- `main`/`master` - 可发布的稳定版分支
 
 3 人或以下团队，使用简单工作流。
 
-- develop - 开发分支，在此分支完成除主分支外的所有分支的工作，可以在 develop 后添加个人名称表示个人分支，如 develop-wurui
-- master/main - 可发布的稳定版分支
+- `develop` - 开发分支，在此分支完成除主分支外的所有分支的工作，可以在 `develop` 后添加个人名称表示个人分支，如 `develop-wurui`，也可以添加功能名称表示功能分支，如 `develop-signin`。
+- `main`/`master` - 可发布的稳定版分支
 
-如果使用现成的 DevOps 工具，分支一般与工作项相关联，否则需要手动处理分支和具体任务之间的关系。
+如果使用现成的 `DevOps` 工具，分支一般与工作项相关联，否则需要手动处理分支和具体任务之间的关系。
 
-版本号遵循语义化版本，格式为`[主版本号].[次版本号].[修订号]`，如`1.0.0`。
+版本号遵循语义化版本，格式为 `[主版本号].[次版本号].[修订号]`，如 `1.0.0`。
 
 版本号递增规则如下。
 
@@ -137,7 +139,7 @@ export_on_save:
 - 次版本号 - 存在功能新增时
 - 修订号 - 存在问题修复时
 
-先行版本号及版本编译元数据可以加到`[主版本号].[次版本号].[修订号]`的后面作为延伸，如`1.0.0-beta.1`，`1.0.0-rc.1`。
+先行版本号及版本编译元数据可以加到 `[主版本号].[次版本号].[修订号]` 的后面作为延伸，如 `1.0.0-beta.1`，`1.0.0-rc.1`，`1.0.0-20210101001`。
 
 ### 版本提交
 
@@ -159,17 +161,17 @@ chore(release): v1.0.0
 
 type 只允许取以下值。
 
-- build - 影响构建系统或外部依赖关系的更改，如 npm
-- ci - 更改 ci 配置文件和脚本，如 flow-ci、travis-ci、circle-ci、jerkins
-- chore - 构建过程或辅助工具和库的更改，基本弃用，可用于表示发布 release
-- docs - 更改文档
-- feat - 新功能
-- fix - 问题修复
-- perf - 性能优化
-- refactor - 重构代码，既没有问题修复，也没有增加功能
-- revert - 回滚代码
-- style - 不影响代码含义的更改，如空格、格式化、缺失分号
-- test - 增加测试或修改当前测试
+- `build` - 影响构建系统或外部依赖关系的更改，如 `npm`，`yarn` 等
+- `ci` - 更改 `ci` 配置文件和脚本，如 `flow-ci`、`travis-ci`、`circle-ci`、`jerkins` 等
+- `chore` - 构建过程或辅助工具和库的更改，基本弃用，可用于表示发布 `release`
+- `docs` - 更改文档
+- `feat` - 新功能
+- `fix` - 问题修复
+- `perf` - 优化
+- `refactor` - 重构代码，既没有问题修复，也没有增加功能
+- `revert` - 回滚代码
+- `style` - 不影响代码含义的更改，如空格、格式化、缺失分号
+- `test` - 增加测试或修改当前测试
 
 ### 代码审查
 
@@ -181,7 +183,7 @@ type 只允许取以下值。
 - 代码性能
 - 代码效率
 
-对于新成员，应每天早上审查，以帮助新成员尽快融入团队。
+对于新成员，应在工作日开工前或下班前审查，以帮助新成员尽快融入团队。
 
 对于其它成员，应采用定时审查，时间定为每周一次和里程碑完成时。
 
@@ -273,7 +275,7 @@ DevOps 工具一般包含持续集成功能。也可以考虑单独使用。
 
 ### 组件测试
 
-首选 [Testing Library](https://testing-library.com/)。
+首选官方组件测试库，备选 [Testing Library](https://testing-library.com/)。
 
 ### 端对端测试
 
