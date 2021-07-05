@@ -214,6 +214,20 @@ type 只允许取以下值。
 - [MillCloud/boilerplate-vue](https://github.com/MillCloud/boilerplate-vue) - 桌面端网页，移动端网页，桌面端应用
 - [MillCloud/boilerplate-uni-app](https://github.com/MillCloud/boilerplate-uni-app) - 移动端应用，小程序
 
+一般支持的浏览器版本如下。
+
+```sh
+last 2 versions
+not dead
+ie >= 11
+edge >= 13
+chrome >= 49
+firefox >= 44
+ios >= 8
+safari >= 8
+android >= 4.4
+```
+
 ### 持续集成
 
 <img
