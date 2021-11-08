@@ -25,8 +25,8 @@ jobs:
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         with:
-          source-repo: git@github.com:MillCloud/frontend-standard.git
-          destination-repo: git@gitee.com:millcloud/frontend-standard.git
+          source-repo: git@github.com:MillCloud/standard.git
+          destination-repo: git@gitee.com:millcloud/standard.git
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
 
@@ -35,5 +35,5 @@ jobs:
         with:
           gitee-username: ModyQyW
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          gitee-repo: millcloud/frontend-standard
+          gitee-repo: millcloud/standard
           branch: main
