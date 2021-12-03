@@ -10,6 +10,7 @@ const repo =
 const repoLabel = mode === 'github' ? 'Github' : 'Gitee';
 
 export default defineUserConfig<DefaultThemeOptions>({
+  base: '/standard/',
   lang: 'zh-Hans',
   title: 'MillCloud 网站开发规范',
   description: '基于 JavaScript / TypeScript 的全栈网站开发规范',
