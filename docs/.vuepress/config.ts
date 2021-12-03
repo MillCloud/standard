@@ -25,6 +25,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       { text: '测试', link: '/testing/' },
       { text: '文档', link: '/documents/' },
       { text: '协作', link: '/cooperation/' },
+      { text: '参考', link: '/reference/' },
     ],
     repo,
     repoLabel,
