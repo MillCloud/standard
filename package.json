@@ -24,7 +24,7 @@
   "devDependencies": {
     "@babel/core": "~7.16.5",
     "@babel/eslint-parser": "~7.16.5",
-    "@commitlint/cli": "~15.0.0",
+    "@commitlint/cli": "~17.1.0",
     "@modyqyw/fabric": "~4.3.0",
     "@snippetors/vuepress-plugin-code-copy": "~1.1.0",
     "@typescript-eslint/eslint-plugin": "~5.7.0",
