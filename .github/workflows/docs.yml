@@ -1,0 +1,38 @@
+name: docs
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+
+jobs:
+  git-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
+      - uses: wearerequired/git-mirror-action@v1
+        with:
+          source-repo: git@github.com:MillCloud/standard.git
+          destination-repo: git@gitee.com:MillCloud/standard.git
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      - uses: yanglbme/gitee-pages-action@main
+        with:
+          gitee-username: ModyQyW
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: MillCloud/standard
+          branch: gh-pages
