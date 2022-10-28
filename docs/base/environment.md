@@ -436,3 +436,7 @@ export PATH=/usr/local/opt/openjdk/bin:$PATH
 - [es6 编译](https://ext.dcloud.net.cn/plugin?id=2045)
 - [HBuilderX uni-app 自动化测试](https://ext.dcloud.net.cn/plugin?id=5708)
 - [scss/sass 编译](https://ext.dcloud.net.cn/plugin?id=2046)
+
+## 参考
+
+- [打造舒适高效的前端开发环境](http://fe.ssr-fc.com/)
