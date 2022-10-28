@@ -5,14 +5,14 @@ const isProduction = process.env.NODE_ENV === 'production';
 export default defineConfig({
   // app configs
   base: isProduction ? '/standard/' : undefined,
-  description: '基于 JavaScript / TypeScript 的全栈网站开发规范',
+  description: '基于 JavaScript / TypeScript 的全栈开发规范',
   lang: 'zh-Hans',
   lastUpdated: true,
   markdown: {
     lineNumbers: true,
     theme: 'github-dark',
   },
-  title: 'MillCloud 网站开发规范',
+  title: 'MillCloud 全栈开发规范',
   // theme configs
   themeConfig: {
     nav: [
@@ -33,7 +33,7 @@ export default defineConfig({
             link: '/base/learning',
           },
           {
-            text: '环境',
+            text: '开发环境',
             link: '/base/environment',
           },
         ],

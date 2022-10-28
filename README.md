@@ -1,3 +1,3 @@
 # standard
 
-MillCloud 基于 JavaScript / TypeScript 的全栈网站开发规范。
+MillCloud 基于 JavaScript / TypeScript 的全栈开发规范。
