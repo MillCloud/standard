@@ -21,4 +21,4 @@
 
 如果还需要更多示例，可以参考 [matiassingers - awesome-readme](https://github.com/matiassingers/awesome-readme#readme)。
 
-另见 [中文技术文档写作规范](document-style-guide) 和 [Vue 文档编写指南](https://v3.cn.vuejs.org/guide/contributing/writing-guide.html) 以了解具体的格式和准则。
+另见 [中文技术文档写作规范](https://github.com/ruanyf/document-style-guide) 和 [Vue 文档编写指南](https://v3.cn.vuejs.org/guide/contributing/writing-guide.html) 以了解具体的格式和准则。
