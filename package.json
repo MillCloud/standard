@@ -1,22 +1,17 @@
 {
   "name": "standard",
-  "version": "0.1.2",
+  "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "scripts": {
+    "build": "vitepress build docs",
     "check:deps": "ncu",
-    "build": "pnpm run build:github",
-    "build:gitee": "cross-env MODE=gitee vitepress build docs",
-    "build:github": "cross-env MODE=github vitepress build docs",
     "commit": "git-cz",
-    "dev": "pnpm run dev:github",
-    "dev:gitee": "cross-env MODE=gitee vitepress dev docs",
-    "dev:github": "cross-env MODE=github vitepress dev docs",
+    "dev": "vitepress dev docs",
     "lint": "run-p lint:eslint lint:markdownlint",
     "lint:eslint": "eslint . --fix --ext=.js,.cjs,.mjs,.jsx,.ts,.cts,.mts,.tsx,.vue --ignore-path=.gitignore --cache",
     "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
-    "prepare": "is-ci || husky install",
-    "release": "release-it"
+    "prepare": "is-ci || husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
@@ -35,7 +30,6 @@
     "lint-staged": "^13.0.3",
     "markdownlint-cli": "^0.32.2",
     "prettier": "^2.7.1",
-    "release-it": "^15.5.0",
     "typescript": "^4.8.4",
     "vitepress": "1.0.0-alpha.26"
   }
