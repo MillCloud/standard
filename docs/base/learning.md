@@ -28,6 +28,12 @@
 - [shenqingchuan](https://github.com/shenqingchuan)
 - [Jinjiang](https://github.com/Jinjiang)
 
+## 构建知识体系
+
+知识体系不是必需品，但构建起知识体系能让自己更好地运用知识，这将在实际工作中有所体现。
+
+建议使用思维导图来整理自己的知识体系。如果你不清楚如何制作思维导图，可参考 [3 分钟带你快速入门思维导图](https://www.edrawsoft.cn/mindmaster/tutorial/how-draw-mindmap/)。
+
 ## 英语
 
 中文是全球使用人数最多的语言，但英语是全球使用最广泛的语言，大量技术文档只有英语版本，大量讨论使用英文。英语可以说是开发人员必需的技能，与开发人员的开发视野、开发能力关联。
