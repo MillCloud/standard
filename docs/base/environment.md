@@ -4,7 +4,9 @@
 
 ## 系统
 
-请使用 Unix 系统作为开发的主力系统。[Deepin](https://www.deepin.org/) 和 [macOS](https://www.apple.com/macos/) 是目前最适合国人开发者入门的 Unix 系统，如果你无力购买苹果相关产品来使用 macOS，使用 Deepin 即可，请不要考虑黑苹果。
+请使用 Unix 系统作为开发的主力系统。
+
+[Deepin](https://www.deepin.org/) 和 [macOS](https://www.apple.com/macos/) 是目前最适合国人开发者入门的 Unix 系统。如果你无力购买苹果相关产品来使用 macOS，使用 Deepin 即可，请不要考虑黑苹果。
 
 ::: details 背后的考量
 
@@ -14,7 +16,7 @@
 - Unix 处理能力更好。
 - Unix 开发者资料更多。
 - 生产环境大多使用 Unix 环境。
-- 黑苹果的体验远差于白苹果。
+- 黑苹果的体验远差于白苹果，且存在侵权问题。
 
 :::
 
