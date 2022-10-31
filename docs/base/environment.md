@@ -62,8 +62,10 @@ Windows，即使使用了 WSL，也很难获取到舒适的开发体验。本章
 调试什么浏览器需根据客户需求确定，但至少应在最新的 Edge 或 Chrome 浏览器测试通过。
 
 国内常见的浏览器有 Edge、Chrome、Firefox、Safari、360 浏览器、360 极速浏览器、360 极速浏览器 X、QQ 浏览器、UC 浏览器、夸克浏览器等。
+:::
 
-可以使用 [浏览器内核检测工具](https://ie.icoa.cn/) 检测内核。
+::: tip 浏览器内核
+可以使用 [浏览器内核检测工具](https://ie.icoa.cn/) 或 [ua-parser-js](https://github.com/faisalman/ua-parser-js) 检测内核。
 :::
 
 ## 浏览器插件
