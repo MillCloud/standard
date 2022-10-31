@@ -1,5 +1,9 @@
 # 开发环境
 
+:::warning
+该部分需要完善。
+:::
+
 设置开发环境就好比砍柴前的磨刀，一个良好的开发环境能帮助你快速进入开发状态。
 
 ## 系统
@@ -53,7 +57,7 @@ Lighthouse 能有效分析网页性能，帮助你做网页的性能优化。
 :::
 
 ::: tip 处理网络问题
-对于 Chrome，你可能不能访问 Chrome 应用商店而无法安装插件。请使用 [谷歌访问助手](./google-access-helper-master.zip)。
+对于 Chrome，你可能不能访问 Chrome 应用商店而无法安装插件。请使用 [谷歌访问助手](/google-access-helper-master.zip)。
 
 如果有条件，建议科学上网。
 :::
