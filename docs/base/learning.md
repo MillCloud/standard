@@ -18,9 +18,21 @@
 
 某些官方的一手资料实际上是多手资料，质量不佳，比如 [vuetify 中文官网](https://vuetifyjs.com/zh-Hans/) 的中文内容由社区志愿者提供，翻译内容质量不算上乘，此时仍然建议优先阅读英文文档。
 
-某些多手资料经过多人阅读、观看、校对，也值得信任，比如 [MDN](https://developer.mozilla.org/)、[TypeScript 入门教程](https://ts.xcatliu.com/)、[labuladong 的算法小抄](https://labuladong.github.io/algo/)、[小林 x 图解计算机基础](https://xiaolincoding.com/)、[JavaScript 高级教程](https://book.douban.com/subject/35175321/)、[ES6 入门教程](https://es6.ruanyifeng.com/) 等。
+某些多手资料经过多人阅读、观看、校对，也值得信任。在此提供一些值得信任的多手资料供参考，你可借助这些资料自行学习，也可以借此拓展技术视野。
 
-在此提供一些值得信任的中文译者供参考：
+- [MDN](https://developer.mozilla.org/)
+- [TypeScript 入门教程](https://ts.xcatliu.com/)
+- [labuladong 的算法小抄](https://labuladong.github.io/algo/)
+- [小林 x 图解计算机基础](https://xiaolincoding.com/)
+- [JavaScript 高级教程](https://book.douban.com/subject/35175321/)
+- [ES6 入门教程](https://es6.ruanyifeng.com/)
+- [thoughtworks 技术雷达](https://www.thoughtworks.com/zh-cn/radar)
+- [印记中文 JavaScript 周刊](https://docschina.org/weekly/js)
+- [印记中文 React 周刊](https://docschina.org/weekly/react/)
+- [前端食堂周刊](https://github.com/Geekhyt/weekly)
+- [MDH 前端周刊](https://github.com/sorrycc/weekly)
+
+在此也提供一些值得信任的中文译者供参考：
 
 - [尤雨溪](https://github.com/yyx990803)
 - [antfu](https://github.com/antfu)
