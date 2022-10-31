@@ -32,6 +32,22 @@ Windows，即使使用了 WSL，也很难获取到舒适的开发体验。本章
 
 请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/)。
 
+<el-tabs>
+  <el-tab-pane label="macOS">
+  
+![macOS 系统偏好设置](./macos-system-settings.png)
+
+![macOS 系统偏好设置 - 网络](./macos-system-settings-network.png)
+
+![macOS 系统偏好设置 - 网络 - 高级](./macos-system-settings-network-enhance.png)
+
+![macOS 系统偏好设置 - 网络 - 高级 - DNS](./macos-system-settings-network-enhance-dns.png)
+
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">TODO</el-tab-pane>
+  <el-tab-pane label="Windows (不推荐)">TODO</el-tab-pane>
+</el-tabs>
+
 ::: details 背后的考量
 修改系统 DNS 可有效避免运营商劫持。
 
@@ -452,3 +468,18 @@ export PATH=/usr/local/opt/openjdk/bin:$PATH
 ## 参考
 
 - [打造舒适高效的前端开发环境](http://fe.ssr-fc.com/)
+
+<script setup>
+import { ElTabs, ElTabPane } from 'element-plus';
+import 'element-plus/es/components/tabs/style/css';
+import 'element-plus/es/components/tab-pane/style/css';
+</script>
+
+<style>
+:root {
+  --el-color-primary: var(--vp-c-brand);
+  --el-color-primary-light-3: var(--vp-c-brand-light);
+  --el-color-primary-light-5: var(--vp-c-brand-lighter);
+  --el-color-primary-dark-2: var(--vp-c-brand-dark);
+}
+</style>
