@@ -20,6 +20,8 @@
 
 某些多手资料经过多人阅读、观看、校对，也值得信任。在此提供一些值得信任的多手资料供参考，你可借助这些资料自行学习，也可以借此拓展技术视野。
 
+::: details 值得信任的多手资料
+
 - [MDN](https://developer.mozilla.org/)
 - [TypeScript 入门教程](https://ts.xcatliu.com/)
 - [labuladong 的算法小抄](https://labuladong.github.io/algo/)
@@ -32,13 +34,19 @@
 - [前端食堂周刊](https://github.com/Geekhyt/weekly)
 - [MDH 前端周刊](https://github.com/sorrycc/weekly)
 
-在此也提供一些值得信任的中文译者供参考：
+:::
+
+在此也提供一些值得信任的中文译者供参考。
+
+::: details 值得信任的中文译者
 
 - [尤雨溪](https://github.com/yyx990803)
 - [antfu](https://github.com/antfu)
 - [QC-L](https://github.com/QC-L)
 - [shenqingchuan](https://github.com/shenqingchuan)
 - [Jinjiang](https://github.com/Jinjiang)
+
+:::
 
 ## 构建知识体系
 
