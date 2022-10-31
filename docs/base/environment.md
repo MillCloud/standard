@@ -22,10 +22,12 @@
 
 ## DNS
 
-请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/)、[百度 DNS](https://dudns.baidu.com/)、[腾讯 DNS](https://www.dnspod.cn/Products/Public.DNS) 或 [114 DNS](https://www.114dns.com/)。
+请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/)。
 
 ::: details 背后的考量
 修改系统 DNS 可有效避免运营商劫持。
+
+阿里 DNS 的解析表现比 [百度 DNS](https://dudns.baidu.com/)、[腾讯 DNS](https://www.dnspod.cn/Products/Public.DNS) 和 [114 DNS](https://www.114dns.com/) 更稳定。但如果你实测并非如此，你可以自行调整 DNS。
 :::
 
 ## 浏览器
