@@ -10,7 +10,11 @@
 
 请使用 Unix 系统作为开发的主力系统。
 
-[Deepin](https://www.deepin.org/) 和 [macOS](https://www.apple.com/macos/) 是目前最适合国人开发者入门的 Unix 系统。如果你无力购买苹果相关产品来使用 macOS，使用 Deepin 即可，请不要考虑黑苹果。
+[macOS](https://www.apple.com/macos/) 是第一选择。
+
+如果你无力购买苹果相关产品来使用 macOS，不要考虑黑苹果，请使用 [Deepin](https://www.deepin.org/)。
+
+Windows，即使使用了 WSL，也很难获取到舒适的开发体验。本章节将重点关注 Unix 系统。
 
 ::: details 背后的考量
 
