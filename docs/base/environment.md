@@ -542,45 +542,62 @@ TODO
   </el-tab-pane>
 </el-tabs>
 
-## Node.js 运行时管理工具
+## Node.js 管理工具
 
-请使用 [nvm](https://github.com/nvm-sh/nvm) 作为 Node.js 运行时管理工具。
+<el-tabs>
+  <el-tab-pane label="macOS">
 
-::: warning Windows
-对于 Windows 系统，请使用 [nvm-windows](https://chocolatey.org/) 作为包管理工具。
-:::
+请安装并及时更新 [nvm](https://github.com/nvm-sh/nvm)，将其作为 Node.js 管理工具。
 
-::: warning 安装
-请参考链接里的说明安装运行时管理工具。
-
-请不要使用包管理工具安装运行时管理工具，因为很可能会导致难以调试的错误。
-:::
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+```
 
 ::: tip 处理网络问题
-nvm 指引中使用 GitHub 链接来安装，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
+使用 GitHub 链接安装 nvm，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
 
 如果有条件，建议科学上网。
 :::
 
-## Node.js 运行时
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">
+  
+请安装并及时更新 [nvm](https://github.com/nvm-sh/nvm)，将其作为 Node.js 管理工具。
 
-请使用 Node.js 运行时管理工具安装 Node.js 运行时。
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+```
 
-一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
+::: tip 处理网络问题
+使用 GitHub 链接安装 nvm，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
+
+如果有条件，建议科学上网。
+:::
+
+  </el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">
+  
+请安装并及时更新 [nvm-windows](https://chocolatey.org/)，将其作为 Node.js 管理工具。
+
+TODO
+
+  </el-tab-pane>
+</el-tabs>
+
+## Node.js
+
+<el-tabs>
+  <el-tab-pane label="macOS">
+
+请使用 nvm 安装 Node.js。一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
 
 ```shell
 nvm install --lts
 nvm alias default node
 ```
 
-::: warning Windows
-nvm-windows 和 nvm 命令不同。你需要明确指定安装的版本，如 `nvm install 18.12.0`。你也无法指定默认的 Node.js 版本。
-:::
-
 ::: tip 处理网络问题
-nvm 和 nvm-windows 默认使用官方的 Node.js 链接下载并安装 Node.js，容易出现网络问题，可以设置镜像源加快下载速度。
-
-对于 nvm，可参考以下做法。你也可以在 zsh 配置文件中增加 `export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/` 并保存、应用改动，这样就会默认使用镜像源下载。
+使用官方链接安装 Node.js，容易出现网络问题，可设置镜像源处理。
 
 ```shell
 export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
@@ -588,29 +605,54 @@ nvm install --lts
 nvm alias default node
 ```
 
-对于 nvm-windows，可参考以下做法。
+镜像源同步可能落后。如果有条件，建议科学上网。
+:::
+
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">
+
+请使用 nvm 安装 Node.js。一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
+
+```shell
+nvm install --lts
+nvm alias default node
+```
+
+::: tip 处理网络问题
+使用官方链接安装 Node.js，容易出现网络问题，可设置镜像源处理。
+
+```shell
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
+nvm install --lts
+nvm alias default node
+```
+
+镜像源同步可能落后。如果有条件，建议科学上网。
+:::
+
+  </el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">
+  
+请使用 nvm-windows 安装 Node.js。一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
+
+```shell
+nvm install lts
+```
+
+::: tip 处理网络问题
+使用官方链接安装 Node.js，容易出现网络问题，可设置镜像源处理。
 
 ```shell
 nvm node_mirror https://npmmirror.com/mirrors/node/
 nvm npm_mirror https://npmmirror.com/mirrors/npm/
-nvm install 18.12.0
+nvm install lts
 ```
 
-如果有条件，建议科学上网。
+镜像源同步可能落后。如果有条件，建议科学上网。
 :::
 
-::: tip 修改 nvm 的配置
-建议打开 zsh 配置文件，修改 nvm 相关内容如下并保存、应用改动。
-
-```shell
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/ # 如果你需要使用镜像源，可以取消该行注释
-```
-
-:::
+  </el-tab-pane>
+</el-tabs>
 
 ## NPM 全局包
 
