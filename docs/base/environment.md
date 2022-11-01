@@ -68,18 +68,18 @@
 可以使用 [浏览器内核检测工具](https://ie.icoa.cn/) 或 [ua-parser-js](https://github.com/faisalman/ua-parser-js) 检测内核。
 :::
 
-## 浏览器插件
+## 浏览器扩展
 
-请安装 [Lighthouse](https://github.com/GoogleChrome/lighthouse)、[Vue.js Devtools](https://devtools.vuejs.org/) 浏览器插件。
+请安装并及时更新 [Lighthouse](https://github.com/GoogleChrome/lighthouse) 和 [Vue.js Devtools](https://devtools.vuejs.org/) 两款浏览器扩展。
 
-::: details 背后的考量
-Lighthouse 能有效分析网页性能，帮助你做网页的性能优化。
+::: details 考量
+Lighthouse 能有效分析、帮助优化网页性能。
 
-由于司内使用 Vue 作为主要前端开发框架，所以需要安装 Vue.js Devtools 帮助调试。
+司内使用 Vue 作为主要前端开发框架，需要安装 Vue.js Devtools 帮助调试。
 :::
 
 ::: tip 处理网络问题
-对于 Chrome，你可能不能访问 Chrome 应用商店而无法安装插件。请使用 [谷歌访问助手](/google-access-helper-master.zip)。
+你可以使用 [谷歌访问助手](/google-access-helper-master.zip) 以访问 Chrome 应用商店安装扩展。
 
 如果有条件，建议科学上网。
 :::
