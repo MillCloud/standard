@@ -30,6 +30,7 @@
 - [小林 x 图解计算机基础](https://xiaolincoding.com/)
 - [labuladong 的算法小抄](https://labuladong.github.io/algo/)
 - [MDN](https://developer.mozilla.org/)
+- [现代 JavaScript 教程](https://zh.javascript.info/)
 - [ES6 入门教程](https://es6.ruanyifeng.com/)
 - [JavaScript 高级教程](https://book.douban.com/subject/35175321/)
 - [TypeScript 入门教程](https://ts.xcatliu.com/)
