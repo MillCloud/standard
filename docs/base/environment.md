@@ -8,15 +8,11 @@
 
 ## 系统
 
-请使用 Unix 系统作为开发的主力系统。
+请使用 Unix 系统作为开发的主力系统以获取更好的开发体验。
 
-[macOS](https://www.apple.com/macos/) 是第一选择。
+[macOS](https://www.apple.com/macos/) 是第一选择。如果你无力购买苹果官方的相关设备来使用 macOS，请使用 [Deepin](https://www.deepin.org/)。
 
-如果你无力购买苹果相关产品来使用 macOS，不要考虑黑苹果，请使用 [Deepin](https://www.deepin.org/)。
-
-Windows，即使使用了 WSL，也很难获取到舒适的开发体验。本章节将重点关注 Unix 系统。
-
-::: details 背后的考量
+::: details 考量
 
 - Unix 系统大部分都是免费使用，无需担心侵权问题。
 - Unix 系统体验比 WSL 更佳。
@@ -24,7 +20,13 @@ Windows，即使使用了 WSL，也很难获取到舒适的开发体验。本章
 - Unix 处理能力更好。
 - Unix 开发者资料更多。
 - 生产环境大多使用 Unix 环境。
-- 黑苹果的体验远差于白苹果，且存在侵权问题。
+
+:::
+
+::: warning 不推荐
+
+- 本规范不推荐使用 Windows，且本章节将以 Unix 系统为重点展开。这是因为使用 Windows 很难得到舒适的开发体验，即使使用了 WSL 也是如此。
+- 本规范不推荐使用黑苹果。这是因为黑苹果的体验远差于白苹果，且存在侵权问题。
 
 :::
 
