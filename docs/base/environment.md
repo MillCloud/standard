@@ -220,9 +220,9 @@ cat ~/.ssh/id_rsa.pub # 获取 rsa 公钥内容
 
 ## VSCode
 
-请使用 [VSCode](https://code.visualstudio.com/) 作为开发的主力编辑器。
+请安装并及时更新 [VSCode](https://code.visualstudio.com/)，将其作为主力开发编辑器。
 
-:::details 背后的考量
+::: details 考量
 
 - VSCode 是 Web 开发者使用率最高的编辑器 / IDE。
 - VSCode 开源、免费，无需担心侵权问题。
@@ -237,12 +237,12 @@ cat ~/.ssh/id_rsa.pub # 获取 rsa 公钥内容
 brew install --cask visual-studio-code
 ```
 
-安装完毕后，请自行安装以下插件。
+安装完毕后，请自行安装以下扩展。
 
 - [any-rule](https://marketplace.visualstudio.com/items?itemName=russell.any-rule) - 提供常用正则
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - 提供拼写检查
 - [Commit Message Editor](https://marketplace.visualstudio.com/items?itemName=adam-bender.commit-message-editor) - 辅助书写提交信息
-- [Dotenv Official + Vaule](https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode) - 提供 .env 相关文件的高亮、自动补全等
+- [Dotenv Official + Vault](https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode) - 提供 .env 相关文件的高亮、自动补全等
 - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - 提供 .editorconfig 支持
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 提供 ESLint 支持
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - 提供 Git 图表和操作支持
@@ -265,7 +265,195 @@ brew install --cask visual-studio-code
 - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - 提供 Vue 支持
 - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) - 提供 YAML 支持
 
-VSCode 支持同步配置，登录后即可自动同步。
+扩展可能会增加 CPU 使用率并导致性能问题，还可能与其它扩展或本地功能发生冲突，因此不要安装过多的扩展。在此提供一些常见的不需要的扩展及替代方式供参考。
+
+::: details 常见的不需要的扩展及替代方式
+
+- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) - 设置 `"editor.linkedEditing": true`
+- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) - 无需额外设置
+- [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport) - 设置 `"javascript.updateImportsOnFileMove.enabled": "always"` 和 `"typescript.updateImportsOnFileMove.enabled": "always"`
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - 登录后即可同步
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - 无需额外设置
+- [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) - 无需额外设置
+- [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets) - 无需额外设置
+- [htmltagwrap](https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap) - 无需额外设置
+- [Lorem ipsum](https://marketplace.visualstudio.com/items?itemName=Tyriar.lorem-ipsum) - 无需额外设置
+- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) - 设置 `"editor.guides.bracketPairs": true`
+
+:::
+
+在此提供一份 VSCode 配置供参考。
+
+::: details VSCode 配置
+
+```jsonc
+{
+  // 插件 Code Spell Checker 使用，指定语言
+  "cSpell.language": "en,en-US",
+  // 插件 Code Spell Checker 使用，指定要检查的语言
+  "cSpell.enabledLanguageIds": [
+    "css",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "json5",
+    "less",
+    "markdown",
+    "plaintext",
+    "sass",
+    "scss",
+    "svelte",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "yaml",
+    "yml"
+  ],
+  // vscode 自带功能，不校验 css，需要和插件 Stylelint 配合使用
+  "css.validate": false,
+  // vscode 自带功能，编辑区默认使用 prettier 格式化，需要安装插件 Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // vscode 自带功能，指定字体族
+  "editor.fontFamily": "LXGW Wenkai Mono, Jetbrains Mono, Menlo, Monaco, Courier New, monospace",
+  // vscode 自带功能，保存时自动格式化
+  "editor.formatOnSave": true,
+  // vscode 自带功能，允许编辑区成对括号指引线着色，不再需要 Bracket Pair Colorizer
+  "editor.guides.bracketPairs": true,
+  // vscode 自带功能，自动修改对应的标签名称，不再需要 Auto Rename Tag
+  "editor.linkedEditing": true,
+  // vscode 自带功能，编辑区 1 个 tab 等于 2 个空格
+  "editor.tabSize": 2,
+  // vscode 自带功能，编辑区行太长时自动换行
+  "editor.wordWrap": "on",
+  // 插件 ESLint 使用，指定需要 ESLint 校验的语言
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "svelte",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  // 插件 ESLint 使用，一直显示状态
+  "eslint.alwaysShowStatus": true,
+  // vscode 自带功能，设置文件换行为 \n (LF)
+  "files.eol": "\n",
+  // vscode 自带功能，指定特定后缀的文件的解析器，这里添加微信小程序、支付宝小程序、百度小程序、头条小程序、wepy 和 uni-app 的支持，另外把一些 json 文件视为 jsonc 文件
+  "files.associations": {
+    "*.wxml": "html",
+    "*.wxs": "javascript",
+    "*.wxss": "css",
+    "*.axml": "html",
+    "*.sjs": "javascript",
+    "*.acss": "css",
+    "*.swan": "html",
+    "*.ttml": "html",
+    "*.ttss": "css",
+    "*.jxml": "html",
+    "*.jxss": "css",
+    "*.wpy": "vue",
+    "*.nvue": "vue",
+    "*.ux": "vue",
+    "manifest.json": "jsonc",
+    "pages.json": "jsonc",
+    "tsconfig.json": "jsonc",
+    "settings.json": "jsonc"
+  },
+  // vscode 自带功能，允许 git 提交不检验
+  "git.allowNoVerifyCommit": true,
+  // vscode 自带功能，git 自动 fetch
+  "git.autofetch": true,
+  // vscode 自带功能，js 文件移动时自动更新引入
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // vscode 自带功能，不校验 less，需要和插件 Stylelint 配合使用
+  "less.validate": false,
+  // vscode 自带功能，不校验 scss，需要和插件 Stylelint 配合使用
+  "scss.validate": false,
+  // 插件 Stylelint 使用，指定需要提示的语言
+  "stylelint.snippet": ["css", "less", "sass", "scss", "vue", "svelte"],
+  // 插件 Stylelint 使用，指定需要校验的语言
+  "stylelint.validate": ["css", "less", "sass", "scss", "vue", "svelte"],
+  // vscode 自带功能，ts 文件移动时自动更新引入
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // vscode 自带功能，自动切换主题
+  "window.autoDetectColorScheme": true,
+  // vscode 自带功能，当前主题
+  "workbench.colorTheme": "GitHub Light Default",
+  // vscode 自带功能，指定 md 文件的预览模式为默认
+  "workbench.editorAssociations": {
+    "*.md": "default"
+  },
+  // vscode 自带功能，指定图标主题为 vscode-icons，需要安装插件 vscode-icons
+  "workbench.iconTheme": "vscode-icons",
+  // vscode 自带功能，自动切换主题的偏好
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+  // vscode 自带功能，控制编辑区在保存文件时的行为
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[css]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[less]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[sass]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[svelte]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    }
+  }
+}
+```
+
+:::
 
 ## Shell
 
