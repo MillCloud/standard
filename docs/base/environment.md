@@ -457,41 +457,44 @@ brew install --cask visual-studio-code
 
 ## Shell
 
-建议切换默认 shell 到 zsh，并安装 [oh-my-zsh](https://ohmyz.sh/) 配合使用。另外建议安装 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) 和 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) 两个插件。
+<el-tabs>
+  <el-tab-pane label="macOS">
 
-::: tip 默认 shell
-Deepin 默认 shell 为 zsh，无需处理。
-
-macOS 请执行如下命令。执行后可能需要重启才生效。
+请把默认 shell 切换为 zsh。切换后，需要打开新的 shell 标签或重启 shell。
 
 ```shell
 sudo chsh -s /bin/zsh
 ```
 
-:::
-
-::: tip 处理 oh-my-zsh 插件权限问题
-
-如果 oh-my-zsh 两个插件安装失败，一般是因为权限不足。可通过修改权限处理该问题。
+请安装 oh-my-zsh 以配合 zsh 使用。
 
 ```shell
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+推荐安装插件 [autojump](https://github.com/wting/autojump)、[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) 和 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)。
+
+```shell
+brew install autojump # 安装 autojump
 sudo chown -R $USER:$USER ~/.oh-my-zsh
-# sudo chown -R 755 ~/.oh-my-zsh
-sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting # 安装 zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions # 安装 zsh-autosuggestions
 ```
 
+::: tip 处理网络问题
+使用 GitHub 链接来安装 zsh-syntax-highlighting 和 zsh-autosuggestions，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
+
+如果有条件，建议科学上网。
 :::
 
-::: tip 修改 oh-my-zsh 默认主题以显示当前完整路径
-
-使用 VSCode 打开默认主题的配置文件。
+安装完插件后，需要修改 ~/.zshrc 相应部分以激活插件。你可以使用 `code ~/.zshrc` 来编辑并保存该文件。
 
 ```shell
-code ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
+plugins=(git vscode web-search z autojump zsh-syntax-highlighting zsh-autosuggestions)
 ```
 
-修改文件内容如下并保存。保存后可能需要重启才生效。
+::: tip shell 显示当前完整路径
+如果你想要 shell 显示当前完整路径，可以修改 oh-my-zsh 的主题。以修改默认主题 robbyrussell 为例，你可以使用 `code ~/.oh-my-zsh/themes/robbyrussell.zsh-theme` 来编辑该文件。
 
 ```shell
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
@@ -501,43 +504,39 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
-
 ```
 
+编辑并保存该文件后，需要打开新的 shell 标签或重启 shell。
 :::
 
-::: warning Windows
-对于 Windows 系统，建议使用 [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-cn&gl=cn) + Git Bash。Git Bash 在安装 Git 时应会一并安装。
+::: tip shell 显示使用者
+如果你想要 shell 显示使用者，可以修改 ~/.zshrc。你可以使用 `code ~/.zshrc` 来编辑并保存该文件。
+
+```shell
+export DEFAULT_USER="$(whoami)"
+```
+
+编辑并保存该文件后，需要打开新的 shell 标签或重启 shell。
+:::
+
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">
+
+Deepin 使用 zsh 作为默认 shell。
+
+TODO
+
+  </el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">
+
+建议使用 [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-cn&gl=cn) + Git Bash。Git Bash 在安装 Git 时应会一并安装。
 
 另见 [定制参考 1](https://sspai.com/post/62167) 和 [定制参考 2](https://sspai.com/post/63814)。
-:::
 
-使用 VSCode 打开 zsh 的配置文件并启用 oh-my-zsh 的插件。
+TODO
 
-```shell
-code ~/.zshrc
-```
-
-修改文件内相关内容如下。
-
-```shell
-plugins=(git vscode web-search z zsh-syntax-highlighting zsh-autosuggestions) # 启用 oh-my-zsh 插件
-
-source $ZSH/oh-my-zsh.sh
-
-...
-
-export DEFAULT_USER="$(whoami)" # 显示使用者
-
-# homebrew
-export PATH=/usr/local/sbin:$PATH
-```
-
-保存并关闭后，执行命令应用改动。你可能需要重启 shell 才能感受到变化。
-
-```shell
-source ~/.zshrc
-```
+  </el-tab-pane>
+</el-tabs>
 
 ## Node.js 运行时管理工具
 
