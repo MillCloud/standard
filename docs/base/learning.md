@@ -12,22 +12,30 @@
 
 ## 一手优先
 
-强调一手资料优先，是为了保证学习的知识的正确性，因为多手资料提供的信息可能不准确，容易误导。一个常见的例子就是大部分人受多手资料误导，认为 `GET` 请求没有请求体 `body`，但实际上 `GET` 请求也可以带有请求体。
+强调一手资料优先，是为了保证学习的知识的正确性，因为多手资料提供的信息可能不准确，容易误导。
 
-一手资料往往由官方提供，由官方或值得信任的社区贡献者把关资料质量。比如 [W3C 英文官网](https://www.w3.org/)、[Vue 中文官网](https://cn.vuejs.org/)、[Vite 中文官网](https://cn.vitejs.dev/)、[React 英文官网](https://reactjs.org/)、[axios 英文官网](https://axios-http.com/) 等。
+::: details 两个常见的多手资料提供的错误信息
 
-某些官方的一手资料实际上是多手资料，质量不佳，比如 [vuetify 中文官网](https://vuetifyjs.com/zh-Hans/) 的中文内容由社区志愿者提供，翻译内容质量不算上乘，此时仍然建议优先阅读英文文档。
+- `GET` 请求没有请求体 `body`。实际上，`GET` 请求可以带有请求体，但中间链路乃至服务器端可能不会处理这个请求体，所以看起来就像是 `GET` 请求没有请求体一样。
+- 虚拟 DOM 比原生操作快。事实上，虚拟 DOM 不一定比原生操作快。虚拟 DOM 被某些框架内部使用，用以保证框架在不需要手动优化的情况下，依然可以提供过得去的性能。
+
+:::
+
+一手资料往往由官方提供，由官方或值得信任的社区贡献者把关资料质量，比如 [W3C 英文官网](https://www.w3.org/)、[Vue 中文官网](https://cn.vuejs.org/)、[Vite 中文官网](https://cn.vitejs.dev/)、[React 英文官网](https://reactjs.org/)、[axios 英文官网](https://axios-http.com/) 等。某些官方的一手资料实际上是质量不佳的多手资料，比如 [Vuetify 中文官网](https://vuetifyjs.com/zh-Hans/)，其中文内容由社区志愿者提供，翻译内容质量不算上乘，仍建议优先阅读英文文档。
 
 某些多手资料经过多人阅读、观看、校对，也值得信任。在此提供一些值得信任的多手资料供参考，你可借助这些资料自行学习，也可以借此拓展技术视野。
 
 ::: details 值得信任的多手资料
 
-- [MDN](https://developer.mozilla.org/)
-- [TypeScript 入门教程](https://ts.xcatliu.com/)
-- [labuladong 的算法小抄](https://labuladong.github.io/algo/)
 - [小林 x 图解计算机基础](https://xiaolincoding.com/)
-- [JavaScript 高级教程](https://book.douban.com/subject/35175321/)
+- [labuladong 的算法小抄](https://labuladong.github.io/algo/)
+- [MDN](https://developer.mozilla.org/)
 - [ES6 入门教程](https://es6.ruanyifeng.com/)
+- [JavaScript 高级教程](https://book.douban.com/subject/35175321/)
+- [TypeScript 入门教程](https://ts.xcatliu.com/)
+- [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
+- [Type Challenges](https://github.com/type-challenges/type-challenges)
+- [roadmap.sh](https://roadmap.sh/)
 - [thoughtworks 技术雷达](https://www.thoughtworks.com/zh-cn/radar)
 - [印记中文 JavaScript 周刊](https://docschina.org/weekly/js)
 - [印记中文 React 周刊](https://docschina.org/weekly/react/)
@@ -53,6 +61,8 @@
 知识体系不是必需品，但构建起知识体系能让自己更好地运用知识，这将在实际工作中有所体现。
 
 建议使用思维导图来整理自己的知识体系。如果你不清楚如何制作思维导图，可参考 [3 分钟带你快速入门思维导图](https://www.edrawsoft.cn/mindmaster/tutorial/how-draw-mindmap/)。
+
+你可以阅读 [roadmap.sh](https://roadmap.sh/) 查看有关学习路径的知识导图示例。
 
 ## 英语
 
