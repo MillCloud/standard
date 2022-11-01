@@ -463,7 +463,7 @@ brew install --cask visual-studio-code
 
 <el-tabs>
   <el-tab-pane label="macOS">
-
+  
 请把默认 shell 切换为 zsh。切换后，需要打开新的 shell 标签或重启 shell。
 
 ```shell
@@ -525,14 +525,14 @@ export DEFAULT_USER="$(whoami)"
 
   </el-tab-pane>
   <el-tab-pane label="Deepin">
-
+  
 Deepin 使用 zsh 作为默认 shell。
 
 TODO
 
   </el-tab-pane>
   <el-tab-pane label="Windows（不推荐）">
-
+  
 建议使用 [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-cn&gl=cn) + Git Bash。Git Bash 在安装 Git 时应会一并安装。
 
 另见 [定制参考 1](https://sspai.com/post/62167) 和 [定制参考 2](https://sspai.com/post/63814)。
@@ -546,7 +546,7 @@ TODO
 
 <el-tabs>
   <el-tab-pane label="macOS">
-
+  
 请安装并及时更新 [nvm](https://github.com/nvm-sh/nvm)，将其作为 Node.js 管理工具。
 
 ```shell
@@ -588,7 +588,7 @@ TODO
 
 <el-tabs>
   <el-tab-pane label="macOS">
-
+  
 请使用 nvm 安装 Node.js。一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
 
 ```shell
@@ -610,7 +610,7 @@ nvm alias default node
 
   </el-tab-pane>
   <el-tab-pane label="Deepin">
-
+  
 请使用 nvm 安装 Node.js。一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
 
 ```shell
@@ -754,3 +754,9 @@ import 'element-plus/es/components/tab-pane/style/css';
   --el-color-primary-dark-2: var(--vp-c-brand-dark);
 }
 </style>
+
+<!-- <el-tabs>
+  <el-tab-pane label="macOS">TODO</el-tab-pane>
+  <el-tab-pane label="Deepin">TODO</el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">TODO</el-tab-pane>
+</el-tabs> -->
