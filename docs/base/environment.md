@@ -86,9 +86,12 @@ Lighthouse 能有效分析、帮助优化网页性能。
 
 ## 包管理工具
 
+<el-tabs>
+  <el-tab-pane label="macOS">
+  
 请使用 [homebrew](https://brew.sh/) 作为包管理工具。
 
-::: details 背后的考量
+::: details 考量
 
 - homebrew 是使用率最高的包管理工具。
 - homebrew 生态非常繁荣，大部分软件都可以通过 homebrew 直接安装，而无需关心路径配置、命令配置等问题。
@@ -117,9 +120,16 @@ brew cleanup --prune=all -q && brew upgrade && brew cu -ay && brew uninstall nod
 brew doctor
 ```
 
-::: warning Windows
-对于 Windows 系统，请使用 [chocolatey](https://chocolatey.org/) 作为包管理工具。
-:::
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">TODO</el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">
+  
+请使用 [chocolatey](https://chocolatey.org/) 作为包管理工具。
+
+TODO
+
+  </el-tab-pane>
+</el-tabs>
 
 ::: tip 处理网络问题
 如果不设置镜像源就直接按照官网说明安装 homebrew ，容易出现网络问题，可手动设置 [homebrew 源](https://mirrors.ustc.edu.cn/help/brew.git.html)、[homebrew bottles 源](https://mirrors.ustc.edu.cn/help/homebrew-bottles.html)、[homebrew core 源](https://mirrors.ustc.edu.cn/help/homebrew-core.git.html)、[homebrew cask 源](https://mirrors.ustc.edu.cn/help/homebrew-cask.git.html)、[homebrew cask versions 源](https://mirrors.ustc.edu.cn/help/homebrew-cask-versions.git.html)。
