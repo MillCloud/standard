@@ -139,51 +139,45 @@ TODO
 
 ## Git
 
-可以使用 homebrew 直接安装 Git。
+<el-tabs>
+  <el-tab-pane label="macOS">
+
+可以使用 homebrew 直接安装 Git。macOS 自带 Git，但借助 homebrew 我们可以更及时更频繁地更新 Git。
 
 ```shell
 brew install git
 ```
 
-请配置你的账号和邮箱。
+请配置你的账号和邮箱，这样有利于区分 Git 操作人。
 
 ```shell
 git config --global user.name "your_name_example"
 git config --global user.email "your_email@example.com"
 ```
 
-请取消自动转换 CRLF。
+请取消自动转换 CRLF，这样有利于跨系统协作。
 
 ```shell
 git config --global core.autocrlf false
 ```
 
-请设置默认分支名为 main。
+请设置默认分支名为 main，这是诸多 Git 服务商的默认分支名。
 
 ```shell
 git config --global init.defaultBranch main
 ```
 
-Git 还需要密钥才能运作。请生成 ed25519 和 rsa 两套密钥。
+Git 还需要密钥才能运作，请生成 ed25519 和 rsa 两套密钥。ed25519 更安全，rsa 支持更好，大部分 Git 服务商都支持 ed25519，但少量 Git 服务商（如 Azure Devops）仍只支持 rsa 密钥。
 
 ```shell
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-::: details 背后的考量
-取消自动转换 CRLF 有利于跨系统协作。
-
-诸多 Git 服务商已经设置默认分支名为 main。
-
-司内使用的 Azure DevOps 目前还只支持 rsa 密钥，尽管 rsa 安全性不如 ed25519，但仍然需要生成两套密钥。
-:::
-
 ::: tip 安全性
-建议输入你自己的 passphrase 并牢记于心，而不是留空回车。这样有利于提高密钥的安全性。
+在生成密钥时，请输入 passphrase 并牢记于心，而不是留空回车。这样有利于提高密钥的安全性。
 :::
 
-::: tip 使用密钥
 在本地，你需要添加私钥。
 
 ```shell
@@ -191,7 +185,7 @@ ssh-add ~/.ssh/id_ed25519
 ssh-add ~/.ssh/id_rsa
 ```
 
-在服务商，你需要添加公钥。在本地获取到公钥内容后，打开服务商页面，粘贴公钥内容并保存。
+在 Git 服务商，你需要添加公钥。在本地获取到公钥内容后，打开 Git 服务商页面，粘贴公钥内容并保存。
 
 ```shell
 cat ~/.ssh/id_ed25519.pub # 获取 es25519 公钥内容
@@ -201,6 +195,26 @@ cat ~/.ssh/id_rsa.pub # 获取 rsa 公钥内容
 ![Azure Devops SSH Key](./azure-devops-ssh-key.jpg)
 
 ![GitHub SSH Key](./github-ssh-key.jpg)
+
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">TODO</el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">TODO</el-tab-pane>
+</el-tabs>
+
+在此提供常见的 Git 服务商供参考。
+
+::: details 常见的 Git 服务商
+
+- [GitHub](https://github.com/)
+- [GitLab](https://about.gitlab.com/)
+- [极狐 GitLab](https://gitlab.cn/)
+- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/)
+- [AWS CodeCommit](https://aws.amazon.com/codecommit/)
+- [阿里云云效](https://www.aliyun.com/product/yunxiao)
+- [腾讯工蜂](https://code.tencent.com/)
+- [腾讯 Coding](https://coding.net/)
+- [Gitee](https://gitee.com/)
+- [Gitea](https://gitea.io/)
 
 :::
 
