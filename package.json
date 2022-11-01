@@ -13,6 +13,9 @@
     "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
     "prepare": "is-ci || husky install"
   },
+  "dependencies": {
+    "element-plus": "^2.2.19"
+  },
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/eslint-parser": "^7.19.1",
@@ -31,9 +34,7 @@
     "markdownlint-cli": "^0.32.2",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4",
+    "vite": "^3.2.2",
     "vitepress": "1.0.0-alpha.26"
-  },
-  "dependencies": {
-    "element-plus": "^2.2.19"
   }
 }
