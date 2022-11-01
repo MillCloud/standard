@@ -56,12 +56,12 @@
 
 ## 浏览器
 
-请安装 [Edge](https://www.microsoft.com/en-us/edge) 或 [Chrome](https://www.google.com/intl/en_us/chrome/) 作为主力开发浏览器。
+请安装并及时更新 [Chrome](https://www.google.com/intl/en_us/chrome/)，将其作为主力开发浏览器。
 
-::: details 背后的考量
-调试什么浏览器需根据客户需求确定，但至少应在最新的 Edge 或 Chrome 浏览器测试通过。
+::: details 考量
+项目至少要在最新的 Chrome 浏览器测试通过。如果客户有额外需求，则需要在客户要求的浏览器上测试通过。
 
-国内常见的浏览器有 Edge、Chrome、Firefox、Safari、360 浏览器、360 极速浏览器、360 极速浏览器 X、QQ 浏览器、UC 浏览器、夸克浏览器等。
+国内常见的浏览器有 Chrome、Edge、Firefox、Safari、360 浏览器、360 极速浏览器、360 极速浏览器 X、QQ 浏览器、UC 浏览器、夸克浏览器、微信内置浏览器等。如果客户不能确定自己的需求，可以在这些浏览器上都测试一遍。
 :::
 
 ::: tip 浏览器内核
