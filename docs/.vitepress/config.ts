@@ -6,6 +6,14 @@ export default defineConfig({
   // app configs
   base: isProduction ? '/standard/' : undefined,
   description: '基于 JavaScript / TypeScript 的全栈开发规范',
+  head: [
+    ['link', { rel: 'stylesheet', href: '//unpkg.com/element-plus/dist/index.css' }],
+    [
+      'style',
+      {},
+      ':root { --el-color-primary: var(--vp-c-brand); --el-color-primary-light-3: var(--vp-c-brand-light); --el-color-primary-light-5: var(--vp-c-brand-lighter); --el-color-primary-dark-2: var(--vp-c-brand-dark) }',
+    ],
+  ],
   lang: 'zh-Hans',
   lastUpdated: true,
   markdown: {

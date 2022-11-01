@@ -742,18 +742,7 @@ export PATH=/usr/local/opt/openjdk/bin:$PATH
 
 <script setup>
 import { ElTabs, ElTabPane } from 'element-plus';
-import 'element-plus/es/components/tabs/style/css';
-import 'element-plus/es/components/tab-pane/style/css';
 </script>
-
-<style>
-:root {
-  --el-color-primary: var(--vp-c-brand);
-  --el-color-primary-light-3: var(--vp-c-brand-light);
-  --el-color-primary-light-5: var(--vp-c-brand-lighter);
-  --el-color-primary-dark-2: var(--vp-c-brand-dark);
-}
-</style>
 
 <!-- <el-tabs>
   <el-tab-pane label="macOS">TODO</el-tab-pane>
