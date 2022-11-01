@@ -29,8 +29,8 @@ export default defineConfig({
             link: '/base/target',
           },
           {
-            text: '学习',
-            link: '/base/learning',
+            text: '学习与工作',
+            link: '/base/learning-and-working',
           },
           {
             text: '开发环境',
