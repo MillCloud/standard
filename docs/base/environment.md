@@ -91,11 +91,21 @@ Lighthouse 能有效分析、帮助优化网页性能。
   
 请使用 [homebrew](https://brew.sh/) 作为包管理工具。
 
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 ::: details 考量
 
 - homebrew 是使用率最高的包管理工具。
 - homebrew 生态非常繁荣，大部分软件都可以通过 homebrew 直接安装，而无需关心路径配置、命令配置等问题。
 
+:::
+
+::: tip 处理网络问题
+使用 GitHub 链接安装 homebrew，容易出现网络问题，可手动设置 [homebrew 源](https://mirrors.ustc.edu.cn/help/brew.git.html)、[homebrew bottles 源](https://mirrors.ustc.edu.cn/help/homebrew-bottles.html)、[homebrew core 源](https://mirrors.ustc.edu.cn/help/homebrew-core.git.html)、[homebrew cask 源](https://mirrors.ustc.edu.cn/help/homebrew-cask.git.html)、[homebrew cask versions 源](https://mirrors.ustc.edu.cn/help/homebrew-cask-versions.git.html)。
+
+镜像源同步可能落后。如果有条件，建议科学上网。
 :::
 
 安装完毕后，需要链接额外的 cask。
@@ -130,12 +140,6 @@ TODO
 
   </el-tab-pane>
 </el-tabs>
-
-::: tip 处理网络问题
-如果不设置镜像源就直接按照官网说明安装 homebrew ，容易出现网络问题，可手动设置 [homebrew 源](https://mirrors.ustc.edu.cn/help/brew.git.html)、[homebrew bottles 源](https://mirrors.ustc.edu.cn/help/homebrew-bottles.html)、[homebrew core 源](https://mirrors.ustc.edu.cn/help/homebrew-core.git.html)、[homebrew cask 源](https://mirrors.ustc.edu.cn/help/homebrew-cask.git.html)、[homebrew cask versions 源](https://mirrors.ustc.edu.cn/help/homebrew-cask-versions.git.html)。
-
-镜像源同步可能落后。如果有条件，建议科学上网。
-:::
 
 ## Git
 
