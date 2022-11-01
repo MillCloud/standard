@@ -32,7 +32,7 @@
 
 ## DNS
 
-请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/)。
+请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/) 以避免运营商劫持。
 
 <el-tabs>
   <el-tab-pane label="macOS">
@@ -50,10 +50,8 @@
   <el-tab-pane label="Windows (不推荐)">TODO</el-tab-pane>
 </el-tabs>
 
-::: details 背后的考量
-修改系统 DNS 可有效避免运营商劫持。
-
-阿里 DNS 的解析表现比 [百度 DNS](https://dudns.baidu.com/)、[腾讯 DNS](https://www.dnspod.cn/Products/Public.DNS) 和 [114 DNS](https://www.114dns.com/) 更稳定。但如果你实测并非如此，你可以自行调整 DNS。
+::: tip 选择
+在多次测试中，阿里 DNS 的解析表现比 [百度 DNS](https://dudns.baidu.com/)、[腾讯 DNS](https://www.dnspod.cn/Products/Public.DNS) 和 [114 DNS](https://www.114dns.com/) 更稳定。但如果你实测并非如此，你可以自行调整 DNS。
 :::
 
 ## 浏览器
