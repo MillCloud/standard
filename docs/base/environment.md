@@ -692,14 +692,21 @@ npm update --location=global --registry=https://registry.npmmirror.com
 
 ## Android Studio
 
-有些时候我们需要使用 Android Studio 来开发调试 Android 应用。可以使用 homebrew 直接安装 Android Studio。另外还需要安装 openjdk 供其使用。
+有些时候我们需要使用 Android Studio 来开发调试 Android 应用。
+
+<el-tabs>
+  <el-tab-pane label="macOS">
+  
+可以使用 homebrew 直接安装 Android Studio。
 
 ```shell
 brew install openjdk
 brew install --cask android-studio
 ```
 
-你还需要修改 zsh 的配置文件，增加 android 和 openjdk 相关配置。最后不要忘了保存并应用改动。
+安装完毕后，需要修改 ~/.zshrc 以增加路径变量。你可以使用 `code ~/.zshrc` 来编辑并保存该文件。
+
+````shell
 
 ```shell
 # android
@@ -711,7 +718,12 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # openjdk
 export PATH=/usr/local/opt/openjdk/bin:$PATH
-```
+````
+
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">TODO</el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">TODO</el-tab-pane>
+</el-tabs>
 
 ## HBuilderX
 
