@@ -152,7 +152,7 @@ TODO
 brew install git
 ```
 
-请配置你的账号和邮箱，这样有利于区分 Git 操作人。
+请配置你的名称和邮箱，这样有利于区分 Git 操作人。
 
 ```shell
 git config --global user.name "your_name_example"
@@ -199,6 +199,26 @@ cat ~/.ssh/id_rsa.pub # 获取 rsa 公钥内容
 ![Azure Devops SSH Key](./azure-devops-ssh-key.jpg)
 
 ![GitHub SSH Key](./github-ssh-key.jpg)
+
+::: tip 允许 RSA 密钥
+在较高版本的 SSH 上，RSA 被默认禁用。你需要手动启用它。
+
+用 VSCode 打开 SSH 配置文件。
+
+```shell
+code /etc/ssh/ssh_config
+```
+
+在文件最后增加两行并保存即可。
+
+```shell
+HostkeyAlgorithms +ssh-rsa
+PubkeyAcceptedAlgorithms +ssh-rsa
+```
+
+[原文链接](https://www.droidwin.com/ssh-not-working-in-macos-ventura-fix/)
+
+:::
 
   </el-tab-pane>
   <el-tab-pane label="Deepin">TODO</el-tab-pane>
@@ -735,6 +755,24 @@ export PATH=/usr/local/opt/openjdk/bin:$PATH
 - [es6 编译](https://ext.dcloud.net.cn/plugin?id=2045)
 - [HBuilderX uni-app 自动化测试](https://ext.dcloud.net.cn/plugin?id=5708)
 - [scss/sass 编译](https://ext.dcloud.net.cn/plugin?id=2046)
+
+## Postman
+
+在做后端开发时，我们需要 API 工具来快速验证 API 的正确性。
+
+<el-tabs>
+  <el-tab-pane label="macOS">
+  
+可以使用 homebrew 直接安装 Postman。
+
+```shell
+brew install --cask postman
+```
+
+  </el-tab-pane>
+  <el-tab-pane label="Deepin">TODO</el-tab-pane>
+  <el-tab-pane label="Windows（不推荐）">TODO</el-tab-pane>
+</el-tabs>
 
 ## 参考
 
