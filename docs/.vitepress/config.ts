@@ -25,7 +25,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '基础', link: '/base/target' },
-      { text: '指引', link: '/guide/workflow' },
+      { text: '指引', link: '/guide/flow' },
       { text: '参考', link: '/reference' },
     ],
     sidebar: [
@@ -37,8 +37,8 @@ export default defineConfig({
             link: '/base/target',
           },
           {
-            text: '学习与工作',
-            link: '/base/learning-and-working',
+            text: '工作学习法',
+            link: '/base/technique',
           },
           {
             text: '开发环境',
@@ -50,8 +50,8 @@ export default defineConfig({
         text: '指引',
         items: [
           {
-            text: '工作流',
-            link: '/guide/workflow',
+            text: '工作学习流',
+            link: '/guide/flow',
           },
           {
             text: '设计',
