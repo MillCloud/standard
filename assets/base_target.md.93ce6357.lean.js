@@ -1,0 +1,1 @@
+import{_ as e,f as t,h as a,O as r}from"./app.c5710fd2.js";const f=JSON.parse('{"title":"\u76EE\u6807","description":"","frontmatter":{},"headers":[],"relativePath":"base/target.md","lastUpdated":1667524961000}'),i={name:"base/target.md"},l=r("",6),o=[l];function n(s,p,h,c,d,_){return t(),a("div",null,o)}const u=e(i,[["render",n]]);export{f as __pageData,u as default};
