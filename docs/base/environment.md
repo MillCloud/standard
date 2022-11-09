@@ -1,14 +1,14 @@
-# 开发环境
+# 研发环境
 
 :::warning
 该部分需要完善。
 :::
 
-设置开发环境就好比砍柴前的磨刀，一个良好的开发环境能帮助你快速进入开发状态。
+设置研发环境就好比砍柴前的磨刀，一个良好的研发环境能帮助你快速进入研发状态。
 
 ## 系统
 
-请使用 Unix 系统作为开发的主力系统以获取更好的开发体验。
+请使用 Unix 系统作为研发的主力系统以获取更好的研发体验。
 
 [macOS](https://www.apple.com/macos/) 是第一选择。如果你无力购买苹果官方的相关设备来使用 macOS，请使用 [Deepin](https://www.deepin.org/)。
 
@@ -18,14 +18,14 @@
 - Unix 系统体验比 WSL 更佳。
 - Unix 系统更为稳定。
 - Unix 处理能力更好。
-- Unix 开发者资料更多。
+- Unix 研发者资料更多。
 - 生产环境大多使用 Unix 环境。
 
 :::
 
 ::: warning 不推荐
 
-- 本规范不推荐使用 Windows，且本章节将以 Unix 系统为重点展开。这是因为使用 Windows 很难得到舒适的开发体验，即使使用了 WSL 也是如此。
+- 本规范不推荐使用 Windows，且本章节将以 Unix 系统为重点展开。这是因为使用 Windows 很难得到舒适的研发体验，即使使用了 WSL 也是如此。
 - 本规范不推荐使用黑苹果。这是因为黑苹果的体验远差于白苹果，且存在侵权问题。
 
 :::
@@ -56,7 +56,7 @@
 
 ## 浏览器
 
-请安装并及时更新 [Chrome](https://www.google.com/intl/en_us/chrome/)，将其作为主力开发浏览器。
+请安装并及时更新 [Chrome](https://www.google.com/intl/en_us/chrome/)，将其作为主力研发浏览器。
 
 ::: details 考量
 项目至少要在最新的 Chrome 浏览器测试通过。如果客户有额外需求，则需要在客户要求的浏览器上测试通过。
@@ -75,7 +75,7 @@
 ::: details 考量
 Lighthouse 能有效分析、帮助优化网页性能。
 
-司内使用 Vue 作为主要前端开发框架，需要安装 Vue.js Devtools 帮助调试。
+司内使用 Vue 作为主要前端研发框架，需要安装 Vue.js Devtools 帮助调试。
 :::
 
 ::: tip 处理网络问题
@@ -244,14 +244,14 @@ PubkeyAcceptedAlgorithms +ssh-rsa
 
 ## VSCode
 
-请安装并及时更新 [VSCode](https://code.visualstudio.com/)，将其作为主力开发编辑器。
+请安装并及时更新 [VSCode](https://code.visualstudio.com/)，将其作为主力研发编辑器。
 
 ::: details 考量
 
-- VSCode 是 Web 开发者使用率最高的编辑器 / IDE。
+- VSCode 是 Web 研发者使用率最高的编辑器 / IDE。
 - VSCode 开源、免费，无需担心侵权问题。
 - VSCode 生态更繁荣，可扩展性强。
-- VSCode 可以运行在不同系统乃至浏览器上，提供非常相近的开发体验。
+- VSCode 可以运行在不同系统乃至浏览器上，提供非常相近的研发体验。
 
 :::
 
@@ -712,7 +712,7 @@ npm update --location=global --registry=https://registry.npmmirror.com
 
 ## Android Studio
 
-有些时候我们需要使用 Android Studio 来开发调试 Android 应用。
+有些时候我们需要使用 Android Studio 来研发调试 Android 应用。
 
 <el-tabs>
   <el-tab-pane label="macOS">
@@ -747,7 +747,7 @@ export PATH=/usr/local/opt/openjdk/bin:$PATH
 
 ## HBuilderX
 
-司内使用 uni-app 开发小程序和移动应用。开发、发布移动应用时，必须使用 HBuilderX。请前往 [官网](https://www.dcloud.io/hbuilderx.html) 下载正式版。
+司内使用 uni-app 研发小程序和移动应用。研发、发布移动应用时，必须使用 HBuilderX。请前往 [官网](https://www.dcloud.io/hbuilderx.html) 下载正式版。
 
 下载完毕后，请自行添加以下插件，并安装所有核心插件。
 
@@ -758,7 +758,7 @@ export PATH=/usr/local/opt/openjdk/bin:$PATH
 
 ## Postman
 
-在做后端开发时，我们需要 API 工具来快速验证 API 的正确性。
+在做后端研发时，我们需要 API 工具来快速验证 API 的正确性。
 
 <el-tabs>
   <el-tab-pane label="macOS">
@@ -776,7 +776,7 @@ brew install --cask postman
 
 ## 参考
 
-- [打造舒适高效的前端开发环境](http://fe.ssr-fc.com/)
+- [打造舒适高效的前端研发环境](http://fe.ssr-fc.com/)
 
 <script setup>
 import { ElTabs, ElTabPane } from 'element-plus';

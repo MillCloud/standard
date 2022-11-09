@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 export default defineConfig({
   // app configs
   base: isProduction ? '/standard/' : undefined,
-  description: '基于 JavaScript / TypeScript 的全栈开发规范',
+  description: '基于 JavaScript / TypeScript 的全栈研发规范',
   head: [
     ['link', { rel: 'stylesheet', href: '//unpkg.com/element-plus/dist/index.css' }],
     [
@@ -20,12 +20,12 @@ export default defineConfig({
     lineNumbers: true,
     theme: 'github-dark',
   },
-  title: 'MillCloud 全栈开发规范',
+  title: 'MillCloud 全栈研发规范',
   // theme configs
   themeConfig: {
     nav: [
       { text: '基础', link: '/base/target' },
-      { text: '指引', link: '/guide/flow' },
+      { text: '指引', link: '/guide/cooperation' },
       { text: '参考', link: '/reference' },
     ],
     sidebar: [
@@ -41,7 +41,7 @@ export default defineConfig({
             link: '/base/technique',
           },
           {
-            text: '开发环境',
+            text: '研发环境',
             link: '/base/environment',
           },
         ],
@@ -50,28 +50,32 @@ export default defineConfig({
         text: '指引',
         items: [
           {
-            text: '工作学习流',
-            link: '/guide/flow',
+            text: '协作',
+            link: '/guide/cooperation',
           },
           {
-            text: '设计',
-            link: '/guide/design',
-          },
-          {
-            text: '编码',
-            link: '/guide/coding',
-          },
-          {
-            text: '测试',
-            link: '/guide/testing',
+            text: '沟通',
+            link: '/guide/communication',
           },
           {
             text: '文档',
             link: '/guide/document',
           },
           {
-            text: '协作',
-            link: '/guide/cooperation',
+            text: '设计',
+            link: '/guide/design',
+          },
+          {
+            text: '研发',
+            link: '/guide/development',
+          },
+          {
+            text: '测试',
+            link: '/guide/test',
+          },
+          {
+            text: '发布',
+            link: 'release',
           },
         ],
       },

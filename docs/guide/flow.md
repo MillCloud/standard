@@ -4,6 +4,8 @@
 需要更新。
 :::
 
+我们在这里关注具体的工具与操作方法，在 [工作学习法](../base/technique.md) 关注工作与学习的原则、方法论等相对抽象的概念。
+
 ## 任务管理
 
 以下是一些团队任务管理工具。
@@ -41,8 +43,8 @@
   referrer="no-referrer"
 />
 
-- `feature` - 功能分支，一般是从 `develop` 开发分支上检出 `checkout`
-- `develop` - 开发分支，`feature` 功能分支的代码开发完成后，经过代码检查后合并到此分支
+- `feature` - 功能分支，一般是从 `develop` 研发分支上检出 `checkout`
+- `develop` - 研发分支，`feature` 功能分支的代码研发完成后，经过代码检查后合并到此分支
 - `release` - 测试、发布分支，此分支从 `develop` 分支上检出 `checkout`, 一般提测阶段会使用该分支的代码
 - `bugfix` - 修复分支，修复 `release` 分支问题
 - `hotfix` - 紧急修复分支，一般是用于修复上线后的生产环境的问题
@@ -50,7 +52,7 @@
 
 3 人或以下团队，使用简单工作流。
 
-- `develop` - 开发分支，在此分支完成除主分支外的所有分支的工作，可以在 `develop` 后添加个人名称表示个人分支，如 `develop-wurui`，也可以添加功能名称表示功能分支，如 `develop-signin`。
+- `develop` - 研发分支，在此分支完成除主分支外的所有分支的工作，可以在 `develop` 后添加个人名称表示个人分支，如 `develop-wurui`，也可以添加功能名称表示功能分支，如 `develop-signin`。
 - `main`/`master` - 可发布的稳定版分支
 
 如果使用现成的 `DevOps` 工具，分支一般与工作项相关联，否则需要手动处理分支和具体任务之间的关系。
@@ -119,7 +121,7 @@ type 只允许取以下值。
 - 工具链独立更新
 - 定制需求可插件化
 
-推荐使用社区内优秀的脚手架初始化并配置项目来开发。
+推荐使用社区内优秀的脚手架初始化并配置项目来研发。
 
 - [vue-cli](https://cli.vuejs.org/)
 - [vite](https://vitejs.dev/)
@@ -133,7 +135,7 @@ type 只允许取以下值。
 - [rax](https://rax.js.org/)
 - [expo](https://expo.io/)
 
-也可以使用以下模板直接开始开发。
+也可以使用以下模板直接开始研发。
 
 - [MillCloud/boilerplate-vue](https://github.com/MillCloud/boilerplate-vue) - 桌面端网页，移动端网页，桌面端应用
 - [MillCloud/boilerplate-uni-app](https://github.com/MillCloud/boilerplate-uni-app) - 移动端应用，小程序
@@ -186,3 +188,5 @@ DevOps 工具一般包含持续集成功能。也可以考虑单独使用。
 ## 参考
 
 - [工作流的祛魅：从工具、阅读到写作](https://sspai.com/post/71658)
+- [3 分钟带你快速入门思维导图](https://www.edrawsoft.cn/mindmaster/tutorial/how-draw-mindmap/)
+- [10x 程序员工作法](https://time.geekbang.org/column/intro/100022301)

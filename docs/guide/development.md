@@ -1,4 +1,4 @@
-# 编码
+# 研发
 
 :::warning
 需要更新。
@@ -34,13 +34,13 @@
 
 总体上遵循 [Vue v2 风格指南](https://cn.vuejs.org/v2/style-guide/) 和 [Vue v3 风格指南](https://v3.cn.vuejs.org/style-guide/)。
 
-开发小程序时，无特殊要求时仍遵循以上规范，否则遵循框架规范。
+研发小程序时，无特殊要求时仍遵循以上规范，否则遵循框架规范。
 
 ## React
 
 总体上遵循 [Airbnb React Style Guide](https://github.com/airbnb/javascript/tree/master/react#readme)。
 
-开发小程序时，无特殊要求时仍遵循以上规范，否则遵循框架规范。
+研发小程序时，无特殊要求时仍遵循以上规范，否则遵循框架规范。
 
 ## 异常处理
 
@@ -56,6 +56,6 @@
 
 ## 工具
 
-开发中需要考虑代码格式的问题，考虑使用 [Prettier](https://prettier.io/) 搭配其它 Linter。
+研发中需要考虑代码格式的问题，考虑使用 [Prettier](https://prettier.io/) 搭配其它 Linter。
 
 整体而言，可以考虑 [VSCode](https://code.visualstudio.com/docs) + [@modyqyw/fabric](https://github.com/ModyQyW/fabric)。

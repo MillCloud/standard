@@ -16,7 +16,7 @@
 
 测试是代码健壮性的保障。每一项测试应具有针对性，所有测试组合起来应覆盖尽可能多的代码。
 
-业务代码较为多变，可以根据情况，只使用代码测试基础组件/工具类等，甚至不使用代码测试，而是直接使用浏览器开发者工具调试。对于移动端，可以使用 [eruda](https://github.com/liriliri/eruda/blob/master/doc/README_CN.md#readme) 或 [v-console](https://github.com/Tencent/vConsole/blob/dev/README_CN.md#readme)。如果需要代理，可以使用 [whistle](https://github.com/avwo/whistle/blob/master/README-zh_CN.md#readme) 或 [light-proxy](https://lightproxy.org/zh-CN)。
+业务代码较为多变，可以根据情况，只使用代码测试基础组件/工具类等，甚至不使用代码测试，而是直接使用浏览器研发者工具调试。对于移动端，可以使用 [eruda](https://github.com/liriliri/eruda/blob/master/doc/README_CN.md#readme) 或 [v-console](https://github.com/Tencent/vConsole/blob/dev/README_CN.md#readme)。如果需要代理，可以使用 [whistle](https://github.com/avwo/whistle/blob/master/README-zh_CN.md#readme) 或 [light-proxy](https://lightproxy.org/zh-CN)。
 
 ## 单元测试
 
