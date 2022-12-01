@@ -14,27 +14,27 @@
     "prepare": "is-ci || husky install"
   },
   "dependencies": {
-    "element-plus": "^2.2.20"
+    "element-plus": "^2.2.25"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
-    "@commitlint/prompt": "^17.2.0",
-    "@modyqyw/fabric": "^5.11.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/prompt": "^17.3.0",
+    "@modyqyw/fabric": "^5.13.0",
     "@tsconfig/node18": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "husky": "^8.0.2",
     "is-ci": "^3.0.1",
-    "lint-staged": "^13.0.3",
+    "lint-staged": "^13.0.4",
     "markdownlint-cli": "^0.32.2",
-    "prettier": "^2.7.1",
-    "typescript": "^4.8.4",
-    "vite": "^3.2.3",
-    "vitepress": "^1.0.0-alpha.28"
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.4",
+    "vitepress": "^1.0.0-alpha.29"
   }
 }
