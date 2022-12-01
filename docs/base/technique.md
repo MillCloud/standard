@@ -6,9 +6,9 @@
 
 ## 保持思考
 
-阅读一份文档或一本书籍，又或是观看一个视频时，需要保持思考，减少只留下印象、没吸收知识的情况出现，尽量避免“无效努力”。
+阅读一份文档或一本书籍，又或是观看一个视频时，需要保持思考，避免只留下印象、没吸收知识。
 
-`六何法`（也被叫做 `6W 分析法` 或 `5W1H 分析法`）是在这个方面上更具体可行的分析法，即在阅读或观看时提出以下六个问题的一个或多个：`何人 Who`、`何事 What`、`何时 When`、`何地 Where`、`为何 Why`、`如何 How`。我们会在后续章节展示六何法的应用。
+`六何法`（也被叫做 `6W 分析法` 或 `5W1H 分析法`）是在这个方面上更具体可行的分析法，即在阅读或观看时提出以下六个问题的一个或多个：`何人 Who`、`何事 What`、`何时 When`、`何地 Where`、`为何 Why`、`如何 How`。
 
 ## 一手优先
 
@@ -16,12 +16,17 @@
 
 ::: details 两个常见的多手资料提供的错误信息
 
-- `GET` 请求没有请求体 `body`。实际上，`GET` 请求可以带有请求体，但中间链路乃至服务器端可能不会处理这个请求体，所以看起来就像是 `GET` 请求没有请求体一样。
-- 虚拟 DOM 比原生操作快。事实上，虚拟 DOM 不一定比原生操作快。虚拟 DOM 被某些框架内部使用，用以保证框架在不需要手动优化的情况下，依然可以提供过得去的性能。
+❌ `GET` 请求没有请求体 `body`
+
+实际上，`GET` 请求可以带有请求体，但中间链路乃至服务器端可能不会处理这个请求体，所以看起来就像是 `GET` 请求没有请求体一样。
+
+❌ 虚拟 DOM 比原生操作快
+
+事实上，虚拟 DOM 不一定比原生操作快。虚拟 DOM 被某些框架内部使用，用于保证框架在不需要手动优化的情况下，依然可以提供过得去的性能。
 
 :::
 
-一手资料往往由官方提供，由官方或值得信任的社区贡献者把关资料质量，比如 [W3C 英文官网](https://www.w3.org/)、[Vue 中文官网](https://cn.vuejs.org/)、[Vite 中文官网](https://cn.vitejs.dev/)、[React 英文官网](https://reactjs.org/)、[axios 英文官网](https://axios-http.com/) 等。某些官方的一手资料实际上是质量不佳的多手资料，比如 [Vuetify 中文官网](https://vuetifyjs.com/zh-Hans/)，其中文内容由社区志愿者提供，翻译内容质量不算上乘，仍建议优先阅读英文文档。
+一手资料往往由官方提供，由官方或值得信任的社区贡献者把关资料质量，比如 [W3C 英文官网](https://www.w3.org/)、[Vue 中文官网](https://cn.vuejs.org/)、[Vite 中文官网](https://cn.vitejs.dev/)、[React 英文官网](https://reactjs.org/)、[axios 英文官网](https://axios-http.com/) 等。某些官方资料质量不佳，比如 [Vuetify 中文官网](https://vuetifyjs.com/zh-Hans/)，其中文内容由英文内容翻译而来，翻译质量较差，仍建议优先阅读英文文档。
 
 某些多手资料经过多人阅读、观看、校对，也值得信任。在此提供一些值得信任的多手资料供参考，你可借助这些资料自行学习，也可以借此拓展技术视野。
 
@@ -36,6 +41,7 @@
 - [TypeScript 入门教程](https://ts.xcatliu.com/)
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 - [Type Challenges](https://github.com/type-challenges/type-challenges)
+- [Beginner's TypeScript](https://www.totaltypescript.com/tutorials/beginners-typescript)
 - [roadmap.sh](https://roadmap.sh/)
 - [thoughtworks 技术雷达](https://www.thoughtworks.com/zh-cn/radar)
 - [印记中文 JavaScript 周刊](https://docschina.org/weekly/js)

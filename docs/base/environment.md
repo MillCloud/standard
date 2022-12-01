@@ -12,6 +12,13 @@
 
 [macOS](https://www.apple.com/macos/) 是第一选择。如果你无力购买苹果官方的相关设备来使用 macOS，请使用 [Deepin](https://www.deepin.org/)。
 
+::: warning 不推荐
+
+- 不推荐使用 Windows，且本章节将以 Unix 系统为重点展开。这是因为使用 Windows 很难得到舒适的研发体验，即使使用了 WSL 也是如此。
+- 不推荐使用黑苹果。这是因为黑苹果的体验远差于白苹果，且存在侵权问题。
+
+:::
+
 ::: details 考量
 
 - Unix 系统大部分都是免费使用，无需担心侵权问题。
@@ -23,16 +30,13 @@
 
 :::
 
-::: warning 不推荐
-
-- 本规范不推荐使用 Windows，且本章节将以 Unix 系统为重点展开。这是因为使用 Windows 很难得到舒适的研发体验，即使使用了 WSL 也是如此。
-- 本规范不推荐使用黑苹果。这是因为黑苹果的体验远差于白苹果，且存在侵权问题。
-
-:::
-
 ## DNS
 
 请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/) 以避免运营商劫持。
+
+::: tip 选择
+在多次测试中，阿里 DNS 的解析表现比 [百度 DNS](https://dudns.baidu.com/)、[腾讯 DNS](https://www.dnspod.cn/Products/Public.DNS) 和 [114 DNS](https://www.114dns.com/) 更稳定。但如果你实测并非如此，你可以自行调整 DNS。
+:::
 
 <el-tabs>
   <el-tab-pane label="macOS">
@@ -50,38 +54,34 @@
   <el-tab-pane label="Windows (不推荐)">TODO</el-tab-pane>
 </el-tabs>
 
-::: tip 选择
-在多次测试中，阿里 DNS 的解析表现比 [百度 DNS](https://dudns.baidu.com/)、[腾讯 DNS](https://www.dnspod.cn/Products/Public.DNS) 和 [114 DNS](https://www.114dns.com/) 更稳定。但如果你实测并非如此，你可以自行调整 DNS。
-:::
-
 ## 浏览器
 
 请安装并及时更新 [Chrome](https://www.google.com/intl/en_us/chrome/)，将其作为主力研发浏览器。
 
-::: details 考量
-项目至少要在最新的 Chrome 浏览器测试通过。如果客户有额外需求，则需要在客户要求的浏览器上测试通过。
-
-国内常见的浏览器有 Chrome、Edge、Firefox、Safari、360 浏览器、360 极速浏览器、360 极速浏览器 X、QQ 浏览器、UC 浏览器、夸克浏览器、微信内置浏览器等。如果客户不能确定自己的需求，可以在这些浏览器上都测试一遍。
-:::
-
 ::: tip 浏览器内核
 可以使用 [浏览器内核检测工具](https://ie.icoa.cn/) 或 [ua-parser-js](https://github.com/faisalman/ua-parser-js) 检测内核。
+:::
+
+::: details 考量
+项目至少要在最新的 Chrome 浏览器测试通过。如果客户有额外需求，则需要在客户要求的浏览器上测试通过。对于老旧浏览器，应只提供 6 个月或更少的额外支持时间，否则会增加研发和测试成本。
+
+国内常见的浏览器有 Chrome、Edge、Firefox、Safari、360 浏览器、360 极速浏览器、360 极速浏览器 X、QQ 浏览器、UC 浏览器、夸克浏览器、微信内置浏览器等。
 :::
 
 ## 浏览器扩展
 
 请安装并及时更新 [Lighthouse](https://github.com/GoogleChrome/lighthouse) 和 [Vue.js Devtools](https://devtools.vuejs.org/) 两款浏览器扩展。
 
-::: details 考量
-Lighthouse 能有效分析、帮助优化网页性能。
-
-司内使用 Vue 作为主要前端研发框架，需要安装 Vue.js Devtools 帮助调试。
-:::
-
 ::: tip 处理网络问题
 你可以使用 [谷歌访问助手](/google-access-helper-master.zip) 以访问 Chrome 应用商店安装扩展。
 
 如果有条件，建议科学上网。
+:::
+
+::: details 考量
+Lighthouse 能有效分析、帮助优化网页性能。
+
+司内使用 Vue 作为主要前端研发框架，需要安装 Vue.js Devtools 帮助调试。
 :::
 
 ## 包管理工具
@@ -91,22 +91,15 @@ Lighthouse 能有效分析、帮助优化网页性能。
   
 请使用 [homebrew](https://brew.sh/) 作为包管理工具。
 
-```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-::: details 考量
-
-- homebrew 是使用率最高的包管理工具。
-- homebrew 生态非常繁荣，大部分软件都可以通过 homebrew 直接安装，而无需关心路径配置、命令配置等问题。
-
-:::
-
 ::: tip 处理网络问题
 使用 GitHub 链接安装 homebrew，容易出现网络问题，可手动设置 [homebrew 源](https://mirrors.ustc.edu.cn/help/brew.git.html)、[homebrew bottles 源](https://mirrors.ustc.edu.cn/help/homebrew-bottles.html)、[homebrew core 源](https://mirrors.ustc.edu.cn/help/homebrew-core.git.html)、[homebrew cask 源](https://mirrors.ustc.edu.cn/help/homebrew-cask.git.html)、[homebrew cask versions 源](https://mirrors.ustc.edu.cn/help/homebrew-cask-versions.git.html)。
 
 镜像源同步可能落后。如果有条件，建议科学上网。
 :::
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 安装完毕后，需要链接额外的 cask。
 
@@ -129,6 +122,13 @@ brew cleanup --prune=all -q && brew upgrade && brew cu -ay && brew uninstall nod
 ```shell
 brew doctor
 ```
+
+::: details 考量
+
+- homebrew 是使用率最高的包管理工具。
+- homebrew 生态非常繁荣，大部分软件都可以通过 homebrew 直接安装，而无需关心路径配置、命令配置等问题。
+
+:::
 
   </el-tab-pane>
   <el-tab-pane label="Deepin">TODO</el-tab-pane>
@@ -173,14 +173,14 @@ git config --global init.defaultBranch main
 
 Git 还需要密钥才能运作，请生成 ed25519 和 rsa 两套密钥。ed25519 更安全，rsa 支持更好，大部分 Git 服务商都支持 ed25519，但少量 Git 服务商（如 Azure Devops）仍只支持 rsa 密钥。
 
+::: tip 安全性
+在生成密钥时，请输入 passphrase 并牢记于心，而不是留空回车。这样有利于提高密钥的安全性。
+:::
+
 ```shell
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
-
-::: tip 安全性
-在生成密钥时，请输入 passphrase 并牢记于心，而不是留空回车。这样有利于提高密钥的安全性。
-:::
 
 在本地，你需要添加私钥。
 
@@ -245,15 +245,6 @@ PubkeyAcceptedAlgorithms +ssh-rsa
 ## VSCode
 
 请安装并及时更新 [VSCode](https://code.visualstudio.com/)，将其作为主力研发编辑器。
-
-::: details 考量
-
-- VSCode 是 Web 研发者使用率最高的编辑器 / IDE。
-- VSCode 开源、免费，无需担心侵权问题。
-- VSCode 生态更繁荣，可扩展性强。
-- VSCode 可以运行在不同系统乃至浏览器上，提供非常相近的研发体验。
-
-:::
 
 可以使用 homebrew 直接安装 VSCode。
 
@@ -479,6 +470,15 @@ brew install --cask visual-studio-code
 
 :::
 
+::: details 考量
+
+- VSCode 是 Web 研发者使用率最高的编辑器 / IDE。
+- VSCode 开源、免费，无需担心侵权问题。
+- VSCode 生态更繁荣，可扩展性强。
+- VSCode 可以运行在不同系统乃至浏览器上，提供非常相近的研发体验。
+
+:::
+
 ## Shell
 
 <el-tabs>
@@ -498,18 +498,18 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 推荐安装插件 [autojump](https://github.com/wting/autojump)、[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) 和 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)。
 
+::: tip 处理网络问题
+使用 GitHub 链接来安装 zsh-syntax-highlighting 和 zsh-autosuggestions，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
+
+如果有条件，建议科学上网。
+:::
+
 ```shell
 brew install autojump # 安装 autojump
 sudo chown -R $USER:$USER ~/.oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting # 安装 zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions # 安装 zsh-autosuggestions
 ```
-
-::: tip 处理网络问题
-使用 GitHub 链接来安装 zsh-syntax-highlighting 和 zsh-autosuggestions，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
-
-如果有条件，建议科学上网。
-:::
 
 安装完插件后，需要修改 ~/.zshrc 相应部分以激活插件。你可以使用 `code ~/.zshrc` 来编辑并保存该文件。
 
@@ -569,35 +569,35 @@ TODO
   
 请安装并及时更新 [nvm](https://github.com/nvm-sh/nvm)，将其作为 Node.js 管理工具。
 
-```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-```
-
 ::: tip 处理网络问题
 使用 GitHub 链接安装 nvm，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
 
 如果有条件，建议科学上网。
 :::
+
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+```
 
   </el-tab-pane>
   <el-tab-pane label="Deepin">
   
 请安装并及时更新 [nvm](https://github.com/nvm-sh/nvm)，将其作为 Node.js 管理工具。
 
-```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-```
-
 ::: tip 处理网络问题
 使用 GitHub 链接安装 nvm，容易出现网络问题，可查看 [GitHub Proxy](https://ghproxy.com/)、[GitHub 访问加速](https://zhuanlan.zhihu.com/p/75994966)、[3 种加速访问 GitHub 的方法](https://segmentfault.com/a/1190000041466088) 等自行调整。
 
 如果有条件，建议科学上网。
 :::
 
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+```
+
   </el-tab-pane>
   <el-tab-pane label="Windows（不推荐）">
   
-请安装并及时更新 [nvm-windows](https://chocolatey.org/)，将其作为 Node.js 管理工具。
+请安装并及时更新 [nvm-windows](https://github.com/coreybutler/nvm-windows)，将其作为 Node.js 管理工具。
 
 TODO
 
@@ -611,11 +611,6 @@ TODO
   
 请使用 nvm 安装 Node.js。一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
 
-```shell
-nvm install --lts
-nvm alias default node
-```
-
 ::: tip 处理网络问题
 使用官方链接安装 Node.js，容易出现网络问题，可设置镜像源处理。
 
@@ -627,17 +622,17 @@ nvm alias default node
 
 镜像源同步可能落后。如果有条件，建议科学上网。
 :::
+
+```shell
+nvm install --lts
+nvm alias default node
+```
 
   </el-tab-pane>
   <el-tab-pane label="Deepin">
   
 请使用 nvm 安装 Node.js。一般情况下，使用最新的 Node.js LTS 版本并每月更新一次即可。你可以在 [这里](https://nodejs.org/) 核对版本。
 
-```shell
-nvm install --lts
-nvm alias default node
-```
-
 ::: tip 处理网络问题
 使用官方链接安装 Node.js，容易出现网络问题，可设置镜像源处理。
 
@@ -649,6 +644,11 @@ nvm alias default node
 
 镜像源同步可能落后。如果有条件，建议科学上网。
 :::
+
+```shell
+nvm install --lts
+nvm alias default node
+```
 
   </el-tab-pane>
   <el-tab-pane label="Windows（不推荐）">
