@@ -1,24 +1,32 @@
 # 文档
 
-:::warning
-需要更新。
+::: warning
+该部分需要完善。
 :::
 
-不同的文档有不同的目标。在这里阐述的文档主要指前端研发者提供给前端研发者的文档，而并非产品提供的需求文档和产品文档、后端研发者提供的接口文档等。
+编写不同文档遵循着通用的原则。
 
-## 代码即文档
+## 尊重有限脑力
 
-代码可以作为文档使用，但必须遵循以下原则。
+当用户开始阅读时，他们从一定量的有限脑力开始。当他们用完这部分脑力时，他们就会停止学习。
 
-- 如果使用 JavaScript 研发，变量、方法等命名需要尽量体现意图，必须使用 [JSDoc](https://jsdoc.app/) 注明类型。如果命名较难体现意图，使用 JSDoc 注明意图。
-- 如果使用 TypeScript 研发，必须书写定义注明类型，变量、方法等命名需要尽量体现意图。如果命名较难体现意图，使用 JSDoc 注明意图。
+复杂的句子、一次必须学习多个概念、不直接相关的抽象示例，都会更快地耗尽脑力。
 
-## README 文档
+使用短句、分解出可消化的部分、调整文档的顺序，能减缓脑力的消耗，使阅读者得以继续下去。
 
-一个良好的 README 文档能够让后来者了解项目的相关信息，也能够让后来者快速上手项目。
+## 从阅读者角度出发
 
-要快速生成一个 README，可以使用 [othneildrew - best-readme-template](https://github.com/othneildrew/Best-README-Template#readme)。
+当我们彻底了解某件事情时，它才会变得很明显。
 
-如果还需要更多示例，可以参考 [matiassingers - awesome-readme](https://github.com/matiassingers/awesome-readme#readme)。
+因此，为了写出好的文档，试着思考你在接收某部分信息时首先需要知道什么。你需要了解哪些专业术语？你误解过什么？什么东西花了很长时间才真正掌握？
 
-另见 [中文技术文档写作规范](https://github.com/ruanyf/document-style-guide) 和 [Vue 文档编写指南](https://v3.cn.vuejs.org/guide/contributing/writing-guide.html) 以了解具体的格式和准则。
+好的文档本身就能满足阅读者的需要，而无需阅读者借助别的资料来理解它。
+
+## 先描述问题，再描述解决方案
+
+在展示一个功能如何工作之前，必须解释它为什么存在。否则，阅读者将没有背景，不知道这些信息对他们是否重要，也就失去了对这些信息的兴趣。
+
+## 参考
+
+- [中文技术文档写作规范](https://github.com/ruanyf/document-style-guide)
+- [Vue 文档写作指南](https://github.com/vuejs-translations/docs-zh-cn/blob/main/.github/contributing/writing-guide.md)
