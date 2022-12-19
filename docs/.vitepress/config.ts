@@ -75,7 +75,7 @@ export default defineConfig({
           },
           {
             text: '发布',
-            link: 'release',
+            link: '/guide/release',
           },
         ],
       },
