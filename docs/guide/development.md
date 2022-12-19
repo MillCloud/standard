@@ -1,70 +1,93 @@
 # 研发
 
-:::warning
-需要更新。
+::: warning
+该部分需要完善。
 :::
 
-## 通用
+## 研发工具
 
-总体上遵循 [bootstrap editorconfig](https://github.com/twbs/bootstrap/blob/main/.editorconfig) 和 [kettanaito - naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet)。
+- [VSCode](https://code.visualstudio.com/docs)
+- [HBuilderX](https://www.dcloud.io/hbuilderx.html) - 仅用于移动应用开发和打包
 
-书写 JavaScript/TypeScript 时，应优先使用驼峰命名法。
+## 校验与格式化工具
 
-书写 CSS 类名时，应优先使用短横线命名法，其次 BEM 命名法。对于 CSS Modules，应优先使用驼峰命名法。
+- [ESLint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
+- [Prettier](https://prettier.io/)
+- [husky](https://typicode.github.io/husky/)
+- [lint-staged](https://github.com/okonet/lint-staged)
 
-具体情况应根据框架要求决定。
+具体配置见 [@modyqyw/fabric](https://github.com/ModyQyW/fabric)。
 
-## HTML
+## 模板
 
-总体上遵循 [mdo - code-guide](https://codeguide.co/)。
+- [millcloud/presets](https://github.com/MillCloud/presets)
 
-## CSS/LESS/SASS/SCSS/STYLUS
+## 异常监控
 
-总体上遵循 [mdo - code-guide](https://codeguide.co/)，同时要理解 [BEM](http://getbem.com/)，[SMACSS](http://smacss.com/)，[OOCSS](https://www.keycdn.com/blog/oocss#what-is-oocss) 和 [CSS Modules](https://github.com/css-modules/css-modules#readme)。
+- [sentry](https://sentry.io/)
 
 ## JavaScript
 
-总体上遵循 [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript#readme)，同时要理解 [Standard JavaScript Style Guide](https://standardjs.com/)。
+- [axios](https://github.com/axios/axios)
+- [lodash](https://lodash.com/)
+- [ramda](https://ramdajs.com/)
+- [dayjs](https://dayjs.gitee.io/)
+- [change-case](https://github.com/blakeembrey/change-case)
+
+使用 [JSDoc](https://jsdoc.app/) 注明类型和意图。
 
 ## TypeScript
 
-总体上遵循 [iamturns - eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript#readme)，同时要理解 [Google TypeScript Style Guide](https://github.com/google/gts#readme)。
+- [type-fest](https://github.com/sindresorhus/type-fest)
 
-## Vue
+使用 [JSDoc](https://jsdoc.app/) 注明意图。
 
-总体上遵循 [Vue v2 风格指南](https://cn.vuejs.org/v2/style-guide/) 和 [Vue v3 风格指南](https://cn.vuejs.org/style-guide/)。
+## 前端
+
+### CSS / SCSS
+
+- [CSS Modules](https://github.com/css-modules/css-modules#readme)
+- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+
+### Atomic CSS 原子化 CSS
+
+- [tailwindcss](https://tailwindcss.com/)
+- [unocss](https://github.com/unocss/unocss) 只能使用 icon
+
+### CSS-IN-JS
+
+- [emotion](https://emotion.sh/)
+- [vanilla-extract](https://vanilla-extract.style/)
+
+### JavaScript
+
+- [browser-update](https://browser-update.org/)
+
+### Vue
+
+- [Vue 风格指南](https://cn.vuejs.org/style-guide/)
+- [vue-router](https://router.vuejs.org/zh/)
+- [pinia](https://pinia.vuejs.org/zh/)
+- [vue-use](https://vueuse.org/)
+- [@tanstack/query](https://tanstack.com/query)
+- [element-plus](https://element-plus.org/)
+- [vant](https://vant-ui.github.io/vant/)
+- [vite](https://cn.vitejs.dev/)
 
 研发小程序时，无特殊要求时仍遵循以上规范，否则遵循框架规范。
 
-## React
+## 后端
 
-总体上遵循 [Airbnb React Style Guide](https://github.com/airbnb/javascript/tree/master/react#readme)。
+### 接口规范
 
-研发小程序时，无特殊要求时仍遵循以上规范，否则遵循框架规范。
+无需特意遵循 [JSON-RPC](https://www.jsonrpc.org/) 或 [Restful API](https://restfulapi.net/)，但可以参考 Restful 做目录划分。
 
-## 异常处理
+### Nest
 
-异常不要用来做流程控制或条件控制，否则效率低下。
+**WIP**
 
-异常必须针对性捕获，否则难以定位问题，也难以针对性处理。
-
-捕获异常后一定要处理，否则无需捕获。外层调用者一定要处理异常。
-
-线上的意外异常应自动上报到系统，作收集、分析。
-
-必须提供手动上报异常的方式。
-
-## 工具
-
-研发中需要考虑代码格式的问题，考虑使用 [Prettier](https://prettier.io/) 搭配其它 Linter。
-
-整体而言，可以考虑 [VSCode](https://code.visualstudio.com/docs) + [@modyqyw/fabric](https://github.com/ModyQyW/fabric)。
-
-<!-- ## 接口规范
-
-- [JSON-RPC](https://www.jsonrpc.org/)
-- [Restful API](https://restfulapi.net/)
-- [GraphQL](https://graphql.org/)
+<!--
 
 ## 接口文档
 
@@ -83,11 +106,6 @@
   - 请求示例，可选 -->
 
 <!-- ## 代码即文档
-
-代码可以作为文档使用，但必须遵循以下原则。
-
-- 如果使用 JavaScript 研发，变量、方法等命名需要尽量体现意图，必须使用 [JSDoc](https://jsdoc.app/) 注明类型。如果命名较难体现意图，使用 JSDoc 注明意图。
-- 如果使用 TypeScript 研发，必须书写定义注明类型，变量、方法等命名需要尽量体现意图。如果命名较难体现意图，使用 JSDoc 注明意图。
 
 ## README 文档
 
