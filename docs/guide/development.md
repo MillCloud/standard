@@ -32,7 +32,7 @@
 
 ## Vue
 
-总体上遵循 [Vue v2 风格指南](https://cn.vuejs.org/v2/style-guide/) 和 [Vue v3 风格指南](https://v3.cn.vuejs.org/style-guide/)。
+总体上遵循 [Vue v2 风格指南](https://cn.vuejs.org/v2/style-guide/) 和 [Vue v3 风格指南](https://cn.vuejs.org/style-guide/)。
 
 研发小程序时，无特殊要求时仍遵循以上规范，否则遵循框架规范。
 
@@ -81,3 +81,20 @@
   - 响应参数和对应描述, 包括数据类型、是否可选等
   - 可能的异常情况，错误代码和对应描述
   - 请求示例，可选 -->
+
+<!-- ## 代码即文档
+
+代码可以作为文档使用，但必须遵循以下原则。
+
+- 如果使用 JavaScript 研发，变量、方法等命名需要尽量体现意图，必须使用 [JSDoc](https://jsdoc.app/) 注明类型。如果命名较难体现意图，使用 JSDoc 注明意图。
+- 如果使用 TypeScript 研发，必须书写定义注明类型，变量、方法等命名需要尽量体现意图。如果命名较难体现意图，使用 JSDoc 注明意图。
+
+## README 文档
+
+一个良好的 README 文档能够让后来者了解项目的相关信息，也能够让后来者快速上手项目。
+
+要快速生成一个 README，可以使用 [othneildrew - best-readme-template](https://github.com/othneildrew/Best-README-Template#readme)。
+
+如果还需要更多示例，可以参考 [matiassingers - awesome-readme](https://github.com/matiassingers/awesome-readme#readme)。
+
+另见 [中文技术文档写作规范](https://github.com/ruanyf/document-style-guide) 以了解具体的格式和准则。 -->
