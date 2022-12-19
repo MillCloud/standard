@@ -10,7 +10,7 @@
 
 请使用 Unix 系统作为研发的主力系统以获取更好的研发体验。
 
-[macOS](https://www.apple.com/macos/) 是第一选择。如果你无力购买苹果官方的相关设备来使用 macOS，请使用 [Deepin](https://www.deepin.org/)。
+[macOS](https://www.apple.com/macos/) 是第一选择。如果你无力购买苹果官方的相关设备来使用 macOS，请使用中文支持良好的 [Deepin](https://www.deepin.org/)。
 
 ::: warning 不推荐
 
@@ -32,7 +32,7 @@
 
 ## DNS
 
-请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/) 以避免运营商劫持。
+请修改系统的 DNS 为 [阿里 DNS](http://alidns.com/) 以避免运营商劫持。如果你设置了科学上网，这一步可以跳过。
 
 ::: tip 选择
 在多次测试中，阿里 DNS 的解析表现比 [百度 DNS](https://dudns.baidu.com/)、[腾讯 DNS](https://www.dnspod.cn/Products/Public.DNS) 和 [114 DNS](https://www.114dns.com/) 更稳定。但如果你实测并非如此，你可以自行调整 DNS。
@@ -57,6 +57,10 @@
 ## 浏览器
 
 请安装并及时更新 [Chrome](https://www.google.com/intl/en_us/chrome/)，将其作为主力研发浏览器。
+
+针对 JavaScript 兼容性，可以考虑设置最低支持目标为 Chrome 53 和 iOS 10。这足以让你使用 Proxy、CSS Variables 等方便的特性，同时也是微信小程序基础库 2.11.0 起的对应支持目标。
+
+针对 CSS 兼容性，可以考虑设置最低支持目标为 Chrome 61。这能防止将 `rgba()` 转化成 `#RGBA` 的形式，为安卓微信 WebView 提供良好的支持。
 
 ::: tip 浏览器内核
 可以使用 [浏览器内核检测工具](https://ie.icoa.cn/) 或 [ua-parser-js](https://github.com/faisalman/ua-parser-js) 检测内核。
@@ -371,6 +375,7 @@ brew install --cask visual-studio-code
     "*.jxss": "css",
     "*.wpy": "vue",
     "*.nvue": "vue",
+    "*.uvue": "vue",
     "*.ux": "vue",
     "manifest.json": "jsonc",
     "pages.json": "jsonc",
@@ -484,7 +489,7 @@ brew install --cask visual-studio-code
 <el-tabs>
   <el-tab-pane label="macOS">
   
-请把默认 shell 切换为 zsh。切换后，需要打开新的 shell 标签或重启 shell。
+如果你对命令行非常熟悉，你可以直接使用 bash，否则请把默认 shell 切换为 zsh。切换后，需要打开新的 shell 标签或重启 shell。
 
 ```shell
 sudo chsh -s /bin/zsh
@@ -546,7 +551,7 @@ export DEFAULT_USER="$(whoami)"
   </el-tab-pane>
   <el-tab-pane label="Deepin">
   
-Deepin 使用 zsh 作为默认 shell。
+如果你对命令行非常熟悉，你可以直接使用 bash，否则请把默认 shell 切换为 zsh。切换后，需要打开新的 shell 标签或重启 shell。
 
 TODO
 
