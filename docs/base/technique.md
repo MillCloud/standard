@@ -73,7 +73,7 @@
 
 中文是全球使用人数最多的语言，但英语是全球使用最广泛的语言，大量技术文档只有英语版本，大量讨论使用英文。英语可以说是研发人员必需的技能，与研发人员的研发视野、研发能力关联。
 
-你可以阅读 [程序员英语学习指南](https://github.com/yujiangshui/A-Programmers-Guide-to-English) 并加以实践。
+你可以阅读 [程序员英语学习指南](https://github.com/yujiangshui/A-Programmers-Guide-to-English)、[英语自学指南](https://bewaters.me/limxtop/2021/08/18/English-introduction/) 和 [英语进阶指南](https://github.com/byoungd/English-level-up-tips) 并加以实践。
 
 ## 先搜后问
 
@@ -81,15 +81,15 @@
 
 请先提取问题的有用信息，比如提取错误信息、提取问题关键字、构建 [最小复现](https://stackoverflow.com/help/minimal-reproducible-example)。
 
-其次，在 Google、Bing、StackOverflow 中搜索错误信息和问题关键字，看能否解决自己的问题，并记录下自己阅读过的解答。如果你没办法使用以上的搜索引擎，可以使用 F 搜、DuckDuckGo、镜像站等资源。
+其次，在 [Google](https://www.google.com/)、[Bing](https://www.bing.com/)、[StackOverflow](https://stackoverflow.com/) 中搜索错误信息和问题关键字，看能否解决自己的问题，并记录下自己阅读过的解答。如果你没办法使用以上的搜索引擎，可以使用 [F 搜](https://fsoufsou.com/)、[DuckDuckGo](https://duckduckgo.com/)、镜像站等资源。
 
-在无法解决自己的问题的情况下，你需要在社区发起一个新问题，提供错误信息、问题关键字、最小复现等相关信息，可参考 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way) 和 [如何向开源社区提问题](https://github.com/seajs/seajs/issues/545)。
+在无法解决自己问题的情况下，你可以向你的同事或朋友求助，他们可能遇到过类似的问题。你也可以在社区发起一个新问题，提供错误信息、问题关键字、最小复现等相关信息，可参考 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way) 和 [如何向开源社区提问题](https://github.com/seajs/seajs/issues/545)。
 
 ## 取舍和平衡
 
 在前端领域，书写原生代码十分繁琐，但同时，如果书写原生代码得当，性能非常高。
 
-而使用框架方便许多，而且框架也提供了默认较好的性能。尽管默认情况下，框架的性能不如极限性能的原生代码，但由于框架提供的便利性，新项目正越来越多地使用框架研发，这正是做取舍而达到平衡的结果表现。
+而使用框架方便许多，而且框架也提供了默认较好的性能。尽管默认情况下，框架的性能不如原生代码所能达到的极限性能，但由于框架提供的便利性，新项目正越来越多地使用框架研发，这正是做取舍而达到平衡的结果表现。
 
 这也应当是你在工作学习中的正确理念，做取舍而达到平衡。
 
@@ -97,7 +97,7 @@
 
 ## 提高效率
 
-进入 [心流](https://baike.baidu.com/item/%E5%BF%83%E6%B5%81/9824097) 是提高效率的好方法，而进入心流的具体操作因人而异，往往集中精神专注做某一件事更容易进入心流。
+进入 [心流](https://baike.baidu.com/item/%E5%BF%83%E6%B5%81/9824097) 是提高效率的好方法，往往集中精神专注做某一件事更容易进入心流，具体操作则因人而异。
 
 ## 追求务实
 
