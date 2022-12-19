@@ -59,3 +59,25 @@
 研发中需要考虑代码格式的问题，考虑使用 [Prettier](https://prettier.io/) 搭配其它 Linter。
 
 整体而言，可以考虑 [VSCode](https://code.visualstudio.com/docs) + [@modyqyw/fabric](https://github.com/ModyQyW/fabric)。
+
+<!-- ## 接口规范
+
+- [JSON-RPC](https://www.jsonrpc.org/)
+- [Restful API](https://restfulapi.net/)
+- [GraphQL](https://graphql.org/)
+
+## 接口文档
+
+- 版本号
+- 文档描述
+- 基本路径
+- 测试服务器，可选
+- 简单使用示例
+- 安全与认证
+- 具体接口定义
+  - url 或方法名
+  - 方法描述
+  - 请求参数和对应描述，包括数据类型、是否可选等
+  - 响应参数和对应描述, 包括数据类型、是否可选等
+  - 可能的异常情况，错误代码和对应描述
+  - 请求示例，可选 -->
