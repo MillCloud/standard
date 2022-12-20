@@ -1,0 +1,1 @@
+import{_ as e,f as r,h as t,M as a}from"./app.c1b432c2.js";const g=JSON.parse('{"title":"参考","description":"","frontmatter":{},"headers":[],"relativePath":"reference.md","lastUpdated":1671518933000}'),n={name:"reference.md"},i=a("",2),l=[i];function o(s,_,c,f,h,d){return r(),t("div",null,l)}const u=e(n,[["render",o]]);export{g as __pageData,u as default};

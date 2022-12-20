@@ -1,0 +1,1 @@
+import{_ as e,f as t,h as a,M as r}from"./app.c1b432c2.js";const f=JSON.parse('{"title":"目标","description":"","frontmatter":{},"headers":[],"relativePath":"base/target.md","lastUpdated":1671518933000}'),i={name:"base/target.md"},l=r("",6),o=[l];function n(s,c,h,p,d,_){return t(),a("div",null,o)}const u=e(i,[["render",n]]);export{f as __pageData,u as default};
