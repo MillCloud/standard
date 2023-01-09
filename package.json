@@ -5,36 +5,36 @@
   "license": "MIT",
   "scripts": {
     "build": "vitepress build docs",
-    "check:deps": "ncu",
+    "check:deps": "ncu --dep dev,optional,prod,packageManager",
     "commit": "git-cz",
     "dev": "vitepress dev docs",
     "lint": "run-p lint:eslint lint:markdownlint",
-    "lint:eslint": "eslint . --fix --ext=.js,.cjs,.mjs,.jsx,.ts,.cts,.mts,.tsx,.vue --ignore-path=.gitignore --cache",
+    "lint:eslint": "eslint . --ext=.js,.cjs,.mjs,.jsx,.ts,.cts,.mts,.tsx,.vue --fix --cache --no-error-on-unmatched-pattern --ignore-path=.gitignore",
     "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
     "prepare": "is-ci || husky install"
   },
   "dependencies": {
-    "element-plus": "^2.2.27"
+    "element-plus": "^2.2.28"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
-    "@commitlint/cli": "^17.3.0",
-    "@commitlint/config-conventional": "^17.3.0",
-    "@commitlint/prompt": "^17.3.0",
-    "@modyqyw/fabric": "^5.14.0",
+    "@commitlint/cli": "^17.4.0",
+    "@commitlint/config-conventional": "^17.4.0",
+    "@commitlint/prompt": "^17.4.0",
+    "@modyqyw/fabric": "^5.16.0",
     "@tsconfig/node18": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "@typescript-eslint/parser": "^5.46.1",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.30.0",
-    "husky": "^8.0.2",
+    "eslint": "^8.31.0",
+    "husky": "^8.0.3",
     "is-ci": "^3.0.1",
     "lint-staged": "^13.1.0",
-    "markdownlint-cli": "^0.32.2",
-    "prettier": "^2.8.1",
+    "markdownlint-cli": "^0.33.0",
+    "prettier": "^2.8.2",
     "typescript": "^4.9.4",
-    "vite": "^4.0.2",
-    "vitepress": "^1.0.0-alpha.32"
+    "vite": "^4.0.4",
+    "vitepress": "^1.0.0-alpha.35"
   }
 }

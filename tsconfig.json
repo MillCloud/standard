@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "extends": "@tsconfig/node18",
   "compilerOptions": {
     "baseUrl": ".",
     "lib": ["DOM"],
@@ -22,7 +22,7 @@
     "**/*.jsx",
     "**/*.tsx",
     "**/*.vue",
-    "docs/.vitepress/config.ts"
+    "docs/.vitepress/*.ts"
   ],
   "exclude": ["**/node_modules", "**/dist"]
 }
